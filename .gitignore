@@ -1,0 +1,6 @@
+# ignore the following file types
+*.o
+*.mod
+
+# ignore the following folders
+output/
