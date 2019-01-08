@@ -3,6 +3,7 @@
 ===================================================================================================
 
 ************************************** G E T A F I X - P A R T I T I O N E R  *********************
+Name:     PIC: Partitioner and Input Creator
 Purpose:  Mesh partitioner software for the GETAFIX code. This a modified version of the previous
           code that was written originally in Fortran.
 
@@ -22,7 +23,12 @@ Comments:
 */
 
 
+#include "../include/time.h"
+
+
 int main(){
+
+
 
 
 
