@@ -1,6 +1,6 @@
 ## Generic makefile by Heedong Goh <wellposed@gmail.com> ########
 ## Name of the executable
-NAME = SeismoOne
+NAME = Geriatrix
 ## Complier
 CC = g++
 ## Source extension
