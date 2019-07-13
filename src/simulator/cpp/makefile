@@ -1,20 +1,31 @@
-## Generic makefile by Heedong Goh <wellposed@gmail.com> ########
+## Developer: Babak Poursartip
+## Latest update:  July 12, 2019
+
+## variables ==================================================================
 ## Name of the executable
 NAME = Geriatrix
+
 ## Complier
 CC = g++
+
 ## Source extension
 SEXT = cpp
-## Source path
+
+## Source directory
 SDIR = .
-## Output path
+
+## Output directory
 ODIR = .
-## Library path
+
+## Library directory
 LIBS = -L/usr/local/lib
-## Include path
+
+## Include directory
 INC = -I./
-## General compile option
+
+## compile option
 CFLAGS = -Wall -Wextra -pedantic -std=c++14
+
 ## Release option
 RFLAGS = -O2
 
@@ -26,15 +37,22 @@ SRCS = $(wildcard $(SDIR)/*.$(SEXT))
 OBJS = $(SRCS:.$(SEXT)=.o)
 
 all : $(TARGET)
+
+	@echo "creaing the object files ..."
 $(TARGET): $(OBJS)
 	$(CC) $(LIBS) $(OBJS) -o $(TARGET) 
-	rm $(OBJS)
+	# rm $(OBJS) # uncomment if you want to remove the object files 
+
+	@echo "compiling the code ..."
 $(OBJS): $(SRCS)
 	mkdir -p $(ODIR)
 	$(CC) $(CFLAGS) $(RFLAGS) $(INC) -c $(SRCS)
+
 cln:
+	@echo "cleaning the folder ..."
 	rm $(TARGET)
-	#rm *.o
+	rm *.o
+
 test:
 	@echo "Sources are: " $(SRCS)
 	@echo "Objects are: " $(OBJS)
@@ -42,7 +60,7 @@ help:
 	@echo "usage:"
 	@echo "      make -> build"
 	@echo "      make dep -> generates dependencies using gccmakedep"
-	@echo "      make clean -> removes objects, executable"
+	@echo "      make cln -> removes objects, executable"
 	@echo "      make test -> lists source files"
 dep :
 	gccmakedep $(INC) $(SRCS)

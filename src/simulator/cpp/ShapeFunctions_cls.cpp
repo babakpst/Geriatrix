@@ -1,42 +1,34 @@
 
 #include "../include/ShapeFunctions_cls.h"
 
-main_ns::ShapeFunctions_ns::ShapeFunctions_cls::
-    ShapeFunctions_cls(int NInt, int NNode)
-    : NInt(NInt),
-      NNode(NNode),
-      Fn(NNode),
-      DFXI(NNode),
-      XInt(NInt),
-      WInt(NInt)
-{
+main_ns::ShapeFunctions_ns::ShapeFunctions_cls::ShapeFunctions_cls(int NInt,
+                                                                   int NNode)
+    : NInt(NInt), NNode(NNode), Fn(NNode), DFXI(NNode), XInt(NInt), WInt(NInt) {
 }
 
-main_ns::ShapeFunctions_ns::ShapeFunctions_cls::~ShapeFunctions_cls()
-{
-}
+main_ns::ShapeFunctions_ns::ShapeFunctions_cls::~ShapeFunctions_cls() {}
 
 /*
 ###################################################################################################
 Purpose: This function retrieves Gauss points for the numerical integration.
 
 Developed by: Babak Poursartip
- 
-The Institute for Computational Engineering and Sciences (ICES)
-The University of Texas at Austin	
 
-================================= V E R S I O N ===================================================
+The Institute for Computational Engineering and Sciences (ICES)
+The University of Texas at Austin
+
+================================= V E R S I O N
+===================================================
 V0.00: 05/14/2018 - Subroutine initiated.
 V0.01: 06/02/2018 - Initiated: Compiled without error for the first time.
 
 ###################################################################################################
 */
 
-void main_ns::ShapeFunctions_ns::ShapeFunctions_cls::Retrieving_Gauss_Points_fn()
-{
+void main_ns::ShapeFunctions_ns::ShapeFunctions_cls::
+    Retrieving_Gauss_Points_fn() {
 
-  switch (NInt)
-  {
+  switch (NInt) {
   case 1:
     XInt[0] = {0.0};  // ABSCISSAE
     WInt[0] = {+2.0}; // WEIGHTS
@@ -48,7 +40,7 @@ void main_ns::ShapeFunctions_ns::ShapeFunctions_cls::Retrieving_Gauss_Points_fn(
     WInt[1] = {+1.0};             // WEIGHTS
     break;
   case 3:
-    XInt[0] = -sqrt(3.0 / 5.0); // ABSCISSAE
+    XInt[0] = -sqrt(3.0 / 5.0);   // ABSCISSAE
     XInt[1] = {0.0};              // ABSCISSAE
     XInt[2] = {+sqrt(3.0 / 5.0)}; // ABSCISSAE
     WInt[0] = {5.0 / 9.0};        // WEIGHTS
@@ -56,6 +48,7 @@ void main_ns::ShapeFunctions_ns::ShapeFunctions_cls::Retrieving_Gauss_Points_fn(
     WInt[2] = {5.0 / 9.0};        // WEIGHTS
     break;
   default:
-    std::cout << "This NInt is not available in code." << "\n";
+    std::cout << "This NInt is not available in code."
+              << "\n";
   }
 }
