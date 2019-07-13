@@ -1,12 +1,13 @@
 
+// libraries
 #include <iostream>
 #include <string>
 #include <sstream>
 
+// classes
 #include "../include/discretize_the_domain_cls.h"
 #include "../include/ShapeFunctions_cls.h"
-#include "../include/ShapeFunctions_1D_FirstOrder_cls.h"
-#include "../include/ShapeFunctions_1D_SecondOrder_cls.h"
+#include "../include/ShapeFunctions_1D_cls.h"
 
 #ifndef CREATE_GLOBAL_MATRICES_H
 #define CREATE_GLOBAL_MATRICES_H

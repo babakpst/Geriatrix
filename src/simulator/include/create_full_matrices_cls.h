@@ -1,20 +1,19 @@
 
+// libraries
 #include <iostream>
 #include <fstream>
 
+// classes
 #include "../include/create_global_matrices_cls.h"
 
 #ifndef CREATE_FULL_MATRICES_CLS_H
 #define CREATE_FULL_MATRICES_CLS_H
 
-namespace main_ns
-{
+namespace main_ns {
 
-namespace Matrices_ns
-{
+namespace Matrices_ns {
 
-class Matrices_Full_cls : public main_ns::Matrices_ns::Matrices_cls
-{
+class Matrices_Full_cls : public main_ns::Matrices_ns::Matrices_cls {
 
 protected:
   virtual void allocating_global_matrices_fn();
@@ -31,7 +30,6 @@ public:
 
   virtual void assemble_local_to_global_fn();
   virtual ~Matrices_Full_cls();
-  
 };
 } // namespace Matrices_ns
 } // namespace main_ns
