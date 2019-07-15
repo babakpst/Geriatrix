@@ -140,11 +140,11 @@ void main_ns::Matrices_ns::Matrices_cls::
   // defining the shape function, SF, depending on the order of the shape
   // function
   if (Model->OrderOfShapeFunc == 1) {
-    SF = new main_ns::ShapeFunctions_ns::ShapeFunctions_1D_FirstOrder_cls(
-        Model->NInt, Model->NNode);
+    SF = new main_ns::ShapeFunctions_ns::ShapeFunctions_1D_2N_cls(Model->NInt,
+                                                                  Model->NNode);
   } else if (Model->OrderOfShapeFunc == 2) {
-    SF = new main_ns::ShapeFunctions_ns::ShapeFunctions_1D_SecondOrder_cls(
-        Model->NInt, Model->NNode);
+    SF = new main_ns::ShapeFunctions_ns::ShapeFunctions_1D_3N_cls(Model->NInt,
+                                                                  Model->NNode);
   }
 
   SF->Retrieving_Gauss_Points_fn(); // Extracting quadratures

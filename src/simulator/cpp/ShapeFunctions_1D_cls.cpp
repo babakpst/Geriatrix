@@ -5,8 +5,9 @@
 #include "../include/ShapeFunctions_cls.h"
 #include "../include/ShapeFunctions_1D_cls.h"
 
-main_ns::ShapeFunctions_ns::ShapeFunctions_1D_FirstOrder_cls::
-    ShapeFunctions_1D_FirstOrder_cls(int aNInt, int aNNode)
+template <class T1, class T2>
+main_ns::ShapeFunctions_ns::ShapeFunctions_1D_2N_cls::ShapeFunctions_1D_2N_cls(
+    T1 aNInt, T1 aNNode)
     : main_ns::ShapeFunctions_ns::ShapeFunctions_cls(aNInt, aNNode) {}
 
 /*
@@ -27,7 +28,8 @@ V0.02: 07/12/2019 - Class name changed to include higher dimension elements.
 ###################################################################################################
 */
 
-void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_FirstOrder_cls::
+template <class T1, class T2>
+void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_2N_cls::
     ShapeFunctions() { // ShapeFunc_1D_2N
   Fn[0] = 0.5 * (1.0 - x1);
   Fn[1] = 0.5 * (1.0 + x1);
@@ -50,16 +52,20 @@ V0.02: 07/12/2019 - Class name changed to include higher dimension elements.
 
 ################################################################################
 */
-void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_FirstOrder_cls::
+
+template <class T1, class T2>
+void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_2N_cls::
     DifferentialOfShapeFunctions() {
   DFXI[0] = {-0.5};
   DFXI[1] = {+0.5};
 }
+
 // =============================================================================
 // second order elements =======================================================
 // =============================================================================
-main_ns::ShapeFunctions_ns::ShapeFunctions_1D_SecondOrder_cls::
-    ShapeFunctions_1D_SecondOrder_cls(int aNInt, int aNNode)
+template <class T1, class T2>
+main_ns::ShapeFunctions_ns::ShapeFunctions_1D_3N_cls::ShapeFunctions_1D_3N_cls(
+    T1 aNInt, T1 aNNode)
     : main_ns::ShapeFunctions_ns::ShapeFunctions_cls(aNInt, aNNode) {}
 
 /*
@@ -80,8 +86,8 @@ V0.02: 07/12/2019 - Class name changed to include higher dimension elements
 ################################################################################
 */
 
-void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_SecondOrder_cls::
-    ShapeFunctions() {
+template <class T1, class T2>
+void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_3N_cls::ShapeFunctions() {
   Fn[0] = 0.5 * x1 * (x1 - 1.0);
   Fn[1] = (1.0 - x1 * x1);
   Fn[2] = 0.5 * x1 * (x1 + 1.0);
@@ -105,7 +111,8 @@ V0.02: 07/12/2019 - Class name changed to include higher dimension elements.
 ################################################################################
 */
 
-void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_SecondOrder_cls::
+template <class T1, class T2>
+void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_3N_cls::
     DifferentialOfShapeFunctions() { // Dif_ShapeFunc_1D_3N
   DFXI[0] = x1 - 0.5;
   DFXI[1] = -2.0 * x1;

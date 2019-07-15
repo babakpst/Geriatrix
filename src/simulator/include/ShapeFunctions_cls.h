@@ -1,36 +1,37 @@
 
-
+// libraries
 #include <math.h>
 #include <iostream>
 #include <vector>
 
+// classes
+
 #ifndef SHAPEFUNCTIONS_CLS_H
 #define SHAPEFUNCTIONS_CLS_H
 
-namespace main_ns
-{
+namespace main_ns {
 
-namespace ShapeFunctions_ns
-{
+namespace ShapeFunctions_ns {
 
-class ShapeFunctions_cls
-{
+// this class is the parent class for all shape funciton classes
+// T1: integer, T2: double precistion
+template <class T1, class T2> class ShapeFunctions_cls {
+
   // members
-
 public:
-  int NInt;  // Number of Integration points (quadrature)
-  int NNode; // Number of nodes in the element
+  T1 NInt;  // Number of Integration points (quadrature)
+  T1 NNode; // Number of nodes in the element
 
-  double x1;    // Location of the integration
+  T2 x1; // Location of the integration
 
-  std::vector<double> Fn;   // Shape function based on the number of nodes
-  std::vector<double> DFXI; // The differential of the shape function
-  std::vector<double> XInt; // ABSCISSAE of the integration points
-  std::vector<double> WInt; // WEIGHTS of the integration points  
+  std::vector<T2> Fn;   // Shape function based on the number of nodes
+  std::vector<T2> DFXI; // The differential of the shape function
+  std::vector<T2> XInt; // ABSCISSAE of the integration points
+  std::vector<T2> WInt; // WEIGHTS of the integration points
 
   // methods
 public:
-  ShapeFunctions_cls(int, int);
+  ShapeFunctions_cls(T1, T1);
 
   void Retrieving_Gauss_Points_fn();
 
@@ -42,4 +43,4 @@ public:
 } // namespace ShapeFunctions_ns
 } // namespace main_ns
 
-#endif
+#endif // SHAPEFUNCTIONS_CLS_H

@@ -1,3 +1,4 @@
+
 // libraries
 
 // classes
@@ -11,13 +12,14 @@ namespace main_ns {
 namespace ShapeFunctions_ns {
 
 // first-order elements
-class ShapeFunctions_1D_FirstOrder_cls
+template <class T1, class T2>
+class ShapeFunctions_1D_2N_cls
     : public main_ns::ShapeFunctions_ns::ShapeFunctions_cls {
 
   // members
   // methods
 public:
-  ShapeFunctions_1D_FirstOrder_cls(int, int);
+  ShapeFunctions_1D_2N_cls(T1, T1);
 
   virtual void ShapeFunctions();               // ShapeFunc_1D_2N
   virtual void DifferentialOfShapeFunctions(); // Dif_ShapeFunc_1D_2N
@@ -26,13 +28,14 @@ public:
 };
 
 // second-order elements
-class ShapeFunctions_1D_SecondOrder_cls
-    : public main_ns::ShapeFunctions_ns::ShapeFunctions_cls {
+template <class T1, class T2>
+class ShapeFunctions_1D_3N_cls
+    : public main_ns::ShapeFunctions_ns::ShapeFunctions_cls<T1, T2> {
 
   // members
   // methods
 public:
-  ShapeFunctions_1D_SecondOrder_cls(int, int);
+  ShapeFunctions_1D_3N_cls(T1, T1);
 
   virtual void ShapeFunctions();               // ShapeFunc_1D_3N
   virtual void DifferentialOfShapeFunctions(); // Dif_ShapeFunc_1D_3N

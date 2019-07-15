@@ -1,12 +1,16 @@
 
+// libraries
+
+// classes
 #include "../include/ShapeFunctions_cls.h"
 
-main_ns::ShapeFunctions_ns::ShapeFunctions_cls::ShapeFunctions_cls(int NInt,
-                                                                   int NNode)
+template <class T1, class T2>
+main_ns::ShapeFunctions_ns::ShapeFunctions_cls<T1, T2>::ShapeFunctions_cls(
+    T1 NInt, T1 NNode)
     : NInt(NInt), NNode(NNode), Fn(NNode), DFXI(NNode), XInt(NInt), WInt(NInt) {
 }
 
-main_ns::ShapeFunctions_ns::ShapeFunctions_cls::~ShapeFunctions_cls() {}
+main_ns::ShapeFunctions_ns::ShapeFunctions_cls<T1, T2>::~ShapeFunctions_cls() {}
 
 /*
 ###################################################################################################
@@ -25,8 +29,8 @@ V0.01: 06/02/2018 - Initiated: Compiled without error for the first time.
 ###################################################################################################
 */
 
-void main_ns::ShapeFunctions_ns::ShapeFunctions_cls::
-    Retrieving_Gauss_Points_fn() {
+void main_ns::ShapeFunctions_ns::ShapeFunctions_cls<
+    T1, T2>::Retrieving_Gauss_Points_fn() {
 
   switch (NInt) {
   case 1:
