@@ -6,8 +6,8 @@
 #include "../include/ShapeFunctions_1D_cls.h"
 
 template <class T1, class T2>
-main_ns::ShapeFunctions_ns::ShapeFunctions_1D_2N_cls::ShapeFunctions_1D_2N_cls(
-    T1 aNInt, T1 aNNode)
+main_ns::ShapeFunctions_ns::ShapeFunctions_1D_2N_cls::ShapeFunctions_1D_2N_cls<
+    T1, T2>(T1 aNInt, T1 aNNode)
     : main_ns::ShapeFunctions_ns::ShapeFunctions_cls(aNInt, aNNode) {}
 
 /*
@@ -29,8 +29,8 @@ V0.02: 07/12/2019 - Class name changed to include higher dimension elements.
 */
 
 template <class T1, class T2>
-void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_2N_cls::
-    ShapeFunctions() { // ShapeFunc_1D_2N
+void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_2N_cls<
+    T1, T2>::ShapeFunctions() { // ShapeFunc_1D_2N
   Fn[0] = 0.5 * (1.0 - x1);
   Fn[1] = 0.5 * (1.0 + x1);
 }
@@ -54,8 +54,8 @@ V0.02: 07/12/2019 - Class name changed to include higher dimension elements.
 */
 
 template <class T1, class T2>
-void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_2N_cls::
-    DifferentialOfShapeFunctions() {
+void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_2N_cls<
+    T1, T2>::DifferentialOfShapeFunctions() {
   DFXI[0] = {-0.5};
   DFXI[1] = {+0.5};
 }
@@ -64,8 +64,8 @@ void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_2N_cls::
 // second order elements =======================================================
 // =============================================================================
 template <class T1, class T2>
-main_ns::ShapeFunctions_ns::ShapeFunctions_1D_3N_cls::ShapeFunctions_1D_3N_cls(
-    T1 aNInt, T1 aNNode)
+main_ns::ShapeFunctions_ns::ShapeFunctions_1D_3N_cls::ShapeFunctions_1D_3N_cls<
+    T1, T2>(T1 aNInt, T1 aNNode)
     : main_ns::ShapeFunctions_ns::ShapeFunctions_cls(aNInt, aNNode) {}
 
 /*
@@ -87,7 +87,8 @@ V0.02: 07/12/2019 - Class name changed to include higher dimension elements
 */
 
 template <class T1, class T2>
-void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_3N_cls::ShapeFunctions() {
+void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_3N_cls<
+    T1, T2>::ShapeFunctions() {
   Fn[0] = 0.5 * x1 * (x1 - 1.0);
   Fn[1] = (1.0 - x1 * x1);
   Fn[2] = 0.5 * x1 * (x1 + 1.0);
@@ -112,8 +113,8 @@ V0.02: 07/12/2019 - Class name changed to include higher dimension elements.
 */
 
 template <class T1, class T2>
-void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_3N_cls::
-    DifferentialOfShapeFunctions() { // Dif_ShapeFunc_1D_3N
+void main_ns::ShapeFunctions_ns::ShapeFunctions_1D_3N_cls<
+    T1, T2>::DifferentialOfShapeFunctions() { // Dif_ShapeFunc_1D_3N
   DFXI[0] = x1 - 0.5;
   DFXI[1] = -2.0 * x1;
   DFXI[2] = x1 + 0.5;
