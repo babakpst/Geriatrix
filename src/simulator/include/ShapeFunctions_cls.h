@@ -23,7 +23,11 @@ public:
   T1 NNode; // Number of nodes in the element
   T1 NDim;  // The dimension of the model
 
-  T2 x1; // Location of the integration
+  T2 x1; // Location of the integration, for 1D and 2D elements
+  T2 x2; // Location of the integration, for 2D quadrilateral elements
+
+  T2 r; // Location of the integration, for 2D triangle elements
+  T2 s; // Location of the integration, for 2D triangle elements
 
   std::vector<T2> Fn;   // Shape function based on the number of nodes
   std::vector<T2> DFXI; // The differential of the shape function
