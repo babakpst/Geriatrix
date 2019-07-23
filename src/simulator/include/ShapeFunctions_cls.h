@@ -21,6 +21,7 @@ template <class T1, class T2> class ShapeFunctions_cls {
 public:
   T1 NInt;  // Number of Integration points (quadrature)
   T1 NNode; // Number of nodes in the element
+  T1 NDim;  // The dimension of the model
 
   T2 x1; // Location of the integration
 
@@ -31,7 +32,7 @@ public:
 
   // methods
 public:
-  ShapeFunctions_cls(T1, T1);
+  ShapeFunctions_cls(T1, T1, T1);
 
   void Retrieving_Gauss_Points_fn();
 

@@ -6,9 +6,9 @@
 
 template <class T1, class T2>
 main_ns::ShapeFunctions_ns::ShapeFunctions_cls<T1, T2>::ShapeFunctions_cls(
-    T1 NInt, T1 NNode)
-    : NInt(NInt), NNode(NNode), Fn(NNode), DFXI(NNode), XInt(NInt), WInt(NInt) {
-}
+    T1 NInt, T1 NNode, T1 NDim)
+    : NInt(NInt), NNode(NNode), NDim(NDim), Fn(NNode), DFXI(NNode * NDim),
+      XInt(NInt), WInt(NInt) {}
 
 main_ns::ShapeFunctions_ns::ShapeFunctions_cls<T1, T2>::~ShapeFunctions_cls() {}
 

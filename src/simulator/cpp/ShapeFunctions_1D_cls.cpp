@@ -11,7 +11,8 @@
 template <class T1, class T2>
 main_ns::ShapeFunctions_ns::ShapeFunctions_1D_2N_cls::ShapeFunctions_1D_2N_cls<
     T1, T2>(T1 aNInt, T1 aNNode)
-    : main_ns::ShapeFunctions_ns::ShapeFunctions_cls<T1, T2>(aNInt, aNNode) {}
+    : main_ns::ShapeFunctions_ns::ShapeFunctions_cls<T1, T2>(aNInt, aNNode, 1) {
+}
 
 /*
 ################################################################################
