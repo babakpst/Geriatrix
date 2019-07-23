@@ -271,3 +271,156 @@ void main_ns::ShapeFunctions_ns::ShapeFunctions_2D_4N_cls<
   DFXI[6] = -(1.0 - x2) * 0.25; // DFXI ( 4 , 1 )
   DFXI[7] = -(1.0 - x1) * 0.25; // DFXI ( 4 , 2 )
 }
+
+// 2D, quadrilateral element, 8 nodes
+template <class T1, class T2>
+main_ns::ShapeFunctions_ns::ShapeFunctions_2D_8N_cls::ShapeFunctions_2D_8N_cls<
+    T1, T2>(T1 aNInt, T1 aNNode)
+    : main_ns::ShapeFunctions_ns::ShapeFunctions_cls<T1, T2>(aNInt, aNNode, 2) {
+}
+
+/*
+################################################################################
+Purpose: This function computes the derivative of shape functions for a 2D,
+         second-order quadrilateral element, 8 noded.
+
+Developed by: Babak Poursartip
+
+The Institute for Computational Engineering and Sciences (ICES)
+The University of Texas at Austin
+
+========================= V E R S I O N ========================================
+V0.00: 07/22/2019 - Subroutine initiated.
+V0.01: 07/22/2019 - Initiated: Compiled without error for the first time.
+
+################################################################################
+*/
+
+template <class T1, class T2>
+void main_ns::ShapeFunctions_ns::ShapeFunctions_2D_9N_cls<
+    T1, T2>::ShapeFunctions() { // ShapeFunc_2D_8N
+  Fn[0] = (1.0 + x1) * (1.0 - x2) * (-1.0 + x1 - x2) * 0.25;
+  Fn[1] = (1.0 + x1) * (1.0 + x2) * (-1.0 + x1 + x2) * 0.25;
+  Fn[2] = (1.0 - x1) * (1.0 + x2) * (-1.0 - x1 + x2) * 0.25;
+  Fn[3] = (1.0 - x1) * (1.0 - x2) * (-1.0 - x1 - x2) * 0.25;
+  Fn[4] = (1.0 - x2 * x2) * (1.0 + x1) * 0.5;
+  Fn[5] = (1.0 - x1 * x1) * (1.0 + x2) * 0.5;
+  Fn[6] = (1.0 - x2 * x2) * (1.0 - x1) * 0.5;
+  Fn[7] = (1.0 - x1 * x1) * (1.0 - x2) * 0.5;
+}
+
+/*
+################################################################################
+Purpose: This function computes the derivative of shape functions for a 2D,
+         second-order quadrilateral element, 8 noded.
+
+Developed by: Babak Poursartip
+
+The Institute for Computational Engineering and Sciences (ICES)
+The University of Texas at Austin
+
+========================= V E R S I O N ========================================
+V0.00: 07/22/2019 - Subroutine initiated.
+V0.01: 07/22/2019 - Initiated: Compiled without error for the first time.
+
+################################################################################
+*/
+
+template <class T1, class T2>
+void main_ns::ShapeFunctions_ns::ShapeFunctions_2D_8N_cls<
+    T1, T2>::DifferentialOfShapeFunctions() {
+  DFXI[0] = (1.0 - x2) * (2.0 * x1 - x2) * 0.25;  // DFXI ( 1 , 1 )
+  DFXI[1] = (1.0 + x1) * (-x1 + 2.0 * x2) * 0.25; // DFXI ( 1 , 2 )
+  DFXI[2] = (1.0 + x2) * (2.0 * x1 + x2) * 0.25;  // DFXI ( 2 , 1 )
+  DFXI[3] = (1.0 + x1) * (x1 + 2.0 * x2) * 0.25;  // DFXI ( 2 , 2 )
+  DFXI[4] = (1.0 + x2) * (2.0 * x1 - x2) * 0.25;  // DFXI ( 3 , 1 )
+  DFXI[5] = (1.0 - x1) * (-x1 + 2.0 * x2) * 0.25; // DFXI ( 3 , 2 )
+  DFXI[6] = (1.0 - x2) * (2.0 * x1 + x2) * 0.25;  // DFXI ( 4 , 1 )
+  DFXI[7] = (1.0 - x1) * (x1 + 2.0 * x2) * 0.25;  // DFXI ( 4 , 2 )
+  DFXI[8] = (1.0 - x2 * x2) * 0.5;                // DFXI ( 5 , 1 )
+  DFXI[9] = -(1.0 + x1) * x2;                     // DFXI ( 5 , 2 )
+  DFXI[10] = -(1.0 + x2) * x1;                    // DFXI ( 6 , 1 )
+  DFXI[11] = (1.0 - x1 * x1) * 0.5;               // DFXI ( 6 , 2 )
+  DFXI[12] = -(1.0 - x2 * x2) * 0.5;              // DFXI ( 7 , 1 )
+  DFXI[13] = -(1.0 - x1) * x2;                    // DFXI ( 7 , 2 )
+  DFXI[14] = -(1.0 - x2) * x1;                    // DFXI ( 8 , 1 )
+  DFXI[15] = -(1.0 - x1 * x1) * 0.5;              // DFXI ( 8 , 2 )
+}
+
+// 2D, quadrilateral element, 9 nodes
+template <class T1, class T2>
+main_ns::ShapeFunctions_ns::ShapeFunctions_2D_9N_cls::ShapeFunctions_2D_9N_cls<
+    T1, T2>(T1 aNInt, T1 aNNode)
+    : main_ns::ShapeFunctions_ns::ShapeFunctions_cls<T1, T2>(aNInt, aNNode, 2) {
+}
+
+/*
+################################################################################
+Purpose: This function computes the derivative of shape functions for a 2D,
+         second-order quadrilateral element, 9 noded.
+
+Developed by: Babak Poursartip
+
+The Institute for Computational Engineering and Sciences (ICES)
+The University of Texas at Austin
+
+========================= V E R S I O N ========================================
+V0.00: 07/22/2019 - Subroutine initiated.
+V0.01: 07/22/2019 - Initiated: Compiled without error for the first time.
+
+################################################################################
+*/
+
+template <class T1, class T2>
+void main_ns::ShapeFunctions_ns::ShapeFunctions_2D_9N_cls<
+    T1, T2>::ShapeFunctions() { // ShapeFunc_2D_8N
+  Fn[0] = 0.25 * x1 * -x2 * (1.0 + x1) * (1.0 - x2);
+  Fn[1] = 0.25 * x1 * x2 * (1.0 + x1) * (1.0 + x2);
+  Fn[2] = 0.25 * -x1 * x2 * (1.0 - x1) * (1.0 + x2);
+  Fn[3] = 0.25 * -x1 * -x2 * (1.0 - x1) * (1.0 - x2);
+  Fn[4] = 0.50 * x1 * (1.0 + x1) * (1.0 - x2 * x2);
+  Fn[5] = 0.50 * x2 * (1.0 + x2) * (1.0 - x1 * x1);
+  Fn[6] = 0.50 * -x1 * (1.0 - x1) * (1.0 - x2 * x2);
+  Fn[7] = 0.50 * -x2 * (1.0 - x2) * (1.0 - x1 * x1);
+  Fn[8] = (1.0 - x1 * x1) * (1.0 - x2 * x2);
+}
+
+/*
+################################################################################
+Purpose: This function computes the derivative of shape functions for a 2D,
+         second-order quadrilateral element, 8 noded.
+
+Developed by: Babak Poursartip
+
+The Institute for Computational Engineering and Sciences (ICES)
+The University of Texas at Austin
+
+========================= V E R S I O N ========================================
+V0.00: 07/22/2019 - Subroutine initiated.
+V0.01: 07/22/2019 - Initiated: Compiled without error for the first time.
+
+################################################################################
+*/
+
+template <class T1, class T2>
+void main_ns::ShapeFunctions_ns::ShapeFunctions_2D_9N_cls<
+    T1, T2>::DifferentialOfShapeFunctions() {
+  DFXI[0] = 0.25 * -x2 * (1.0 - x2) * (1.0 + 2.0 * x1);   // DFXI (1,1)
+  DFXI[1] = 0.25 * x2 * (1.0 + x2) * (1.0 + 2.0 * x1);    // DFXI (2,1)
+  DFXI[2] = 0.25 * x2 * (1.0 + x2) * (-1.0 + 2.0 * x1);   // DFXI (3,1)
+  DFXI[3] = 0.25 * -x2 * (1.0 - x2) * (-1.0 + 2.0 * x1);  // DFXI (4,1)
+  DFXI[4] = 0.50 * (1.0 - x2 * x2) * (1.0 + 2.0 * x1);    // DFXI (5,1)
+  DFXI[5] = 0.50 * (1.0 - x2 * x2) * (-1.0 + 2.0 * x1);   // DFXI (7,1)
+  DFXI[6] = x2 * (1.0 + x2) * -x1;                        // DFXI (6,1)
+  DFXI[7] = -x2 * (1.0 - x2) * -x1;                       // DFXI (8,1)
+  DFXI[8] = -2.0 * x1 * (1.0 - x2 * x2);                  // DFXI (9,1)
+  DFXI[9] = 0.25 * x1 * (1.0 + x1) * (-1.0 + 2.0 * x2);   // DFXI (1,2)
+  DFXI[10] = 0.25 * x1 * (1.0 + x1) * (1.0 + 2.0 * x2);   // DFXI (2,2)
+  DFXI[11] = 0.25 * -x1 * (1.0 - x1) * (1.0 + 2.0 * x2);  // DFXI (3,2)
+  DFXI[12] = 0.25 * -x1 * (1.0 - x1) * (-1.0 + 2.0 * x2); // DFXI (4,2)
+  DFXI[13] = x1 * (1.0 + x1) * -x2;                       // DFXI (5,2)
+  DFXI[14] = -x1 * (1.0 - x1) * -x2;                      // DFXI (7,2)
+  DFXI[15] = 0.50 * (1.0 - x1 * x1) * (1.0 + 2.0 * x2);   // DFXI (6,2)
+  DFXI[16] = 0.50 * (1.0 - x1 * x1) * (-1.0 + 2.0 * x2);  // DFXI (8,2)
+  DFXI[17] = -2.0 * x2 * (1.0 - x1 * x1);                 // DFXI (9,2)
+}

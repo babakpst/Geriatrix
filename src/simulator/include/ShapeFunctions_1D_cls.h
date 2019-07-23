@@ -14,7 +14,7 @@ namespace ShapeFunctions_ns {
 // first-order elements
 template <class T1, class T2>
 class ShapeFunctions_1D_2N_cls
-    : public main_ns::ShapeFunctions_ns::ShapeFunctions_cls {
+    : public main_ns::ShapeFunctions_ns::ShapeFunctions_cls<T1, T2> {
 
   // members
   // methods

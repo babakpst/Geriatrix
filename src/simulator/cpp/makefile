@@ -24,7 +24,7 @@ LIBS = -L/usr/local/lib
 INC = -I./
 
 ## compile option
-CFLAGS = -Wall -Wextra -pedantic -std=c++14
+CFLAGS = -Wall -Wextra -pedantic -std=c++17
 
 ## Release option
 RFLAGS = -O2
