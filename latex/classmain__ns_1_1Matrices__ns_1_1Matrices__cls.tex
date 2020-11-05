@@ -1,0 +1,295 @@
+\hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls}{}\doxysection{main\+\_\+ns\+::Matrices\+\_\+ns\+::Matrices\+\_\+cls Class Reference}
+\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls}\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+
+
+{\ttfamily \#include $<$create\+\_\+global\+\_\+matrices\+\_\+cls.\+h$>$}
+
+
+
+Inheritance diagram for main\+\_\+ns\+::Matrices\+\_\+ns\+::Matrices\+\_\+cls\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain__ns_1_1Matrices__ns_1_1Matrices__cls__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for main\+\_\+ns\+::Matrices\+\_\+ns\+::Matrices\+\_\+cls\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain__ns_1_1Matrices__ns_1_1Matrices__cls__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ade7c3417e5ec34b70ce2f0b2c394b3b7}{Matrices\+\_\+cls}} (\mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}} $\ast$, \mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}} $\ast$)
+\item 
+void \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_accb32bd322cb06ddb239f6c3f1b2fffb}{allocating\+\_\+local\+\_\+matrices\+\_\+fn}} ()
+\item 
+virtual void \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aa84910834042b3d2dc7f9be7b19fea5f}{allocating\+\_\+global\+\_\+matrices\+\_\+fn}} (void)=0
+\item 
+virtual void \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a28837ba9bf01f268557c884046d502ec}{assemble\+\_\+local\+\_\+to\+\_\+global\+\_\+fn}} (void)=0
+\item 
+void \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aa49d8872518af7471a16742643764e90}{allocate\+\_\+matrices\+\_\+for\+\_\+assembling\+\_\+fn}} ()
+\item 
+void \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ae33a23f4c02f101ff5cc36620ac57a28}{assembling\+\_\+local\+\_\+matrices\+\_\+into\+\_\+global\+\_\+matrices\+\_\+fn}} ()
+\item 
+virtual void \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a79cdddf678af8a908dcea32af41dc40c}{create\+\_\+\+D\+R\+M\+\_\+matrices\+\_\+fn}} (void)=0
+\item 
+virtual \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aadfcc7ce3c557b10d6ef3b7c98a6fec4}{$\sim$\+Matrices\+\_\+cls}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aac0d35bfccb0bc8816d007a061ecae32}{N\+Eq\+El}}
+\item 
+double $\ast$$\ast$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a4f59296e941b8a0ecbdc5e5bec3f5f43}{K\+\_\+eb}}
+\item 
+double $\ast$$\ast$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_abb45d1e5569689ac2d0eecff45f2721e}{C\+\_\+eb}}
+\item 
+double $\ast$$\ast$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a1dff8de65f3f287c2a9a26a260119150}{M\+\_\+eb}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ad6e84e1571a5048a2c46b00042d95dc1}{F}}
+\item 
+int \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aecba13562b3aeacb256cd68d9daef6ad}{Load\+Func}}
+\item 
+double $\ast$$\ast$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a4ed62579f4d5efe9a61458c38fa1ef0b}{XT}}
+\item 
+double $\ast$$\ast$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a84f5dda120702387352e53e87e6113eb}{Ke}}
+\item 
+double $\ast$$\ast$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a242b69901733238a86ebd5291ac68bec}{Ce}}
+\item 
+double $\ast$$\ast$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ab524c0cd978d1f03f5c6d95d32336b5c}{Me}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a55f33c325b7dce457cd42f6c911a7a66}{Fe}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a22c7ddd06f8b548cf1d5f42a781419e2}{N\+D\+\_\+b}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a67e36766c64cb68ee91f63673cca8087}{N\+D\+\_\+e}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a9abed43838184dd9af13ade285b0c72c}{ND}}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}} $\ast$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_abc7fb6fa0df15c57851ed49a4f5a749a}{Discretized\+Model}}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}} $\ast$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a4e377b846e57d659f6c282428810af05}{Model}}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1ShapeFunctions__ns_1_1ShapeFunctions__cls}{main\+\_\+ns\+::\+Shape\+Functions\+\_\+ns\+::\+Shape\+Functions\+\_\+cls}}$<$ int, double $>$ $\ast$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ac93172e6b6dd13de97f88ca952268a4d}{SF}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ab3661a3938dd956e1ee0a14e58ea9c7b}{compute\+\_\+elemental\+\_\+matrices\+\_\+fn}} (int, double, double)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a40d22df36215fdc080a519bb2343da4a}{M\+Type}}
+\item 
+double \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a9a9a9c21d17db0a1d5a26ad5d790c579}{E}}
+\item 
+double \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a28794552a3937894ea44b254b3e3eb8e}{Rho}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ade7c3417e5ec34b70ce2f0b2c394b3b7}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ade7c3417e5ec34b70ce2f0b2c394b3b7}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!Matrices\_cls@{Matrices\_cls}}
+\index{Matrices\_cls@{Matrices\_cls}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{Matrices\_cls()}{Matrices\_cls()}}
+{\footnotesize\ttfamily main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+Matrices\+\_\+cls (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}} $\ast$}]{a\+Discretization,  }\item[{\mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}} $\ast$}]{a\+Model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aadfcc7ce3c557b10d6ef3b7c98a6fec4}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aadfcc7ce3c557b10d6ef3b7c98a6fec4}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!````~Matrices\_cls@{$\sim$Matrices\_cls}}
+\index{````~Matrices\_cls@{$\sim$Matrices\_cls}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{$\sim$Matrices\_cls()}{~Matrices\_cls()}}
+{\footnotesize\ttfamily main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::$\sim$\+Matrices\+\_\+cls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aa49d8872518af7471a16742643764e90}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aa49d8872518af7471a16742643764e90}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!allocate\_matrices\_for\_assembling\_fn@{allocate\_matrices\_for\_assembling\_fn}}
+\index{allocate\_matrices\_for\_assembling\_fn@{allocate\_matrices\_for\_assembling\_fn}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{allocate\_matrices\_for\_assembling\_fn()}{allocate\_matrices\_for\_assembling\_fn()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::allocate\+\_\+matrices\+\_\+for\+\_\+assembling\+\_\+fn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aa84910834042b3d2dc7f9be7b19fea5f}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aa84910834042b3d2dc7f9be7b19fea5f}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!allocating\_global\_matrices\_fn@{allocating\_global\_matrices\_fn}}
+\index{allocating\_global\_matrices\_fn@{allocating\_global\_matrices\_fn}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{allocating\_global\_matrices\_fn()}{allocating\_global\_matrices\_fn()}}
+{\footnotesize\ttfamily virtual void main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::allocating\+\_\+global\+\_\+matrices\+\_\+fn (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a478a4b0d803ce50f676c461b0cc59646}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Skyline\+\_\+cls}}, and \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Full__cls_a5f02405d801a44906364f6437ec91eaf}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Full\+\_\+cls}}.
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_accb32bd322cb06ddb239f6c3f1b2fffb}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_accb32bd322cb06ddb239f6c3f1b2fffb}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!allocating\_local\_matrices\_fn@{allocating\_local\_matrices\_fn}}
+\index{allocating\_local\_matrices\_fn@{allocating\_local\_matrices\_fn}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{allocating\_local\_matrices\_fn()}{allocating\_local\_matrices\_fn()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::allocating\+\_\+local\+\_\+matrices\+\_\+fn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a28837ba9bf01f268557c884046d502ec}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a28837ba9bf01f268557c884046d502ec}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!assemble\_local\_to\_global\_fn@{assemble\_local\_to\_global\_fn}}
+\index{assemble\_local\_to\_global\_fn@{assemble\_local\_to\_global\_fn}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{assemble\_local\_to\_global\_fn()}{assemble\_local\_to\_global\_fn()}}
+{\footnotesize\ttfamily virtual void main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::assemble\+\_\+local\+\_\+to\+\_\+global\+\_\+fn (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a3b51e2f0b01652905eb340f1fefdb31f}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Skyline\+\_\+cls}}, and \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Full__cls_a75293bb40f9122490a88060fc410341b}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Full\+\_\+cls}}.
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ae33a23f4c02f101ff5cc36620ac57a28}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ae33a23f4c02f101ff5cc36620ac57a28}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!assembling\_local\_matrices\_into\_global\_matrices\_fn@{assembling\_local\_matrices\_into\_global\_matrices\_fn}}
+\index{assembling\_local\_matrices\_into\_global\_matrices\_fn@{assembling\_local\_matrices\_into\_global\_matrices\_fn}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{assembling\_local\_matrices\_into\_global\_matrices\_fn()}{assembling\_local\_matrices\_into\_global\_matrices\_fn()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::assembling\+\_\+local\+\_\+matrices\+\_\+into\+\_\+global\+\_\+matrices\+\_\+fn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ab3661a3938dd956e1ee0a14e58ea9c7b}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ab3661a3938dd956e1ee0a14e58ea9c7b}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!compute\_elemental\_matrices\_fn@{compute\_elemental\_matrices\_fn}}
+\index{compute\_elemental\_matrices\_fn@{compute\_elemental\_matrices\_fn}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{compute\_elemental\_matrices\_fn()}{compute\_elemental\_matrices\_fn()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::compute\+\_\+elemental\+\_\+matrices\+\_\+fn (\begin{DoxyParamCaption}\item[{int}]{iel,  }\item[{double}]{Rho,  }\item[{double}]{E }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a79cdddf678af8a908dcea32af41dc40c}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a79cdddf678af8a908dcea32af41dc40c}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!create\_DRM\_matrices\_fn@{create\_DRM\_matrices\_fn}}
+\index{create\_DRM\_matrices\_fn@{create\_DRM\_matrices\_fn}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{create\_DRM\_matrices\_fn()}{create\_DRM\_matrices\_fn()}}
+{\footnotesize\ttfamily virtual void main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::create\+\_\+\+D\+R\+M\+\_\+matrices\+\_\+fn (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_aa65e907c058d7e610c594ad7193394ce}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Skyline\+\_\+cls}}, and \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Full__cls_a7c6ef4cd6b8adf4e2592cac49c9a9f19}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Full\+\_\+cls}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_abb45d1e5569689ac2d0eecff45f2721e}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_abb45d1e5569689ac2d0eecff45f2721e}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!C\_eb@{C\_eb}}
+\index{C\_eb@{C\_eb}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{C\_eb}{C\_eb}}
+{\footnotesize\ttfamily double$\ast$$\ast$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+C\+\_\+eb}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a242b69901733238a86ebd5291ac68bec}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a242b69901733238a86ebd5291ac68bec}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!Ce@{Ce}}
+\index{Ce@{Ce}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{Ce}{Ce}}
+{\footnotesize\ttfamily double$\ast$$\ast$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+Ce}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_abc7fb6fa0df15c57851ed49a4f5a749a}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_abc7fb6fa0df15c57851ed49a4f5a749a}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!DiscretizedModel@{DiscretizedModel}}
+\index{DiscretizedModel@{DiscretizedModel}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{DiscretizedModel}{DiscretizedModel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}}$\ast$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+Discretized\+Model}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a9a9a9c21d17db0a1d5a26ad5d790c579}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a9a9a9c21d17db0a1d5a26ad5d790c579}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!E@{E}}
+\index{E@{E}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{E}{E}}
+{\footnotesize\ttfamily double main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::E\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ad6e84e1571a5048a2c46b00042d95dc1}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ad6e84e1571a5048a2c46b00042d95dc1}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!F@{F}}
+\index{F@{F}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{F}{F}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::F}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a55f33c325b7dce457cd42f6c911a7a66}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a55f33c325b7dce457cd42f6c911a7a66}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!Fe@{Fe}}
+\index{Fe@{Fe}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{Fe}{Fe}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+Fe}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a4f59296e941b8a0ecbdc5e5bec3f5f43}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a4f59296e941b8a0ecbdc5e5bec3f5f43}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!K\_eb@{K\_eb}}
+\index{K\_eb@{K\_eb}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{K\_eb}{K\_eb}}
+{\footnotesize\ttfamily double$\ast$$\ast$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+K\+\_\+eb}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a84f5dda120702387352e53e87e6113eb}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a84f5dda120702387352e53e87e6113eb}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!Ke@{Ke}}
+\index{Ke@{Ke}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{Ke}{Ke}}
+{\footnotesize\ttfamily double$\ast$$\ast$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+Ke}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aecba13562b3aeacb256cd68d9daef6ad}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aecba13562b3aeacb256cd68d9daef6ad}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!LoadFunc@{LoadFunc}}
+\index{LoadFunc@{LoadFunc}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{LoadFunc}{LoadFunc}}
+{\footnotesize\ttfamily int main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+Load\+Func}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a1dff8de65f3f287c2a9a26a260119150}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a1dff8de65f3f287c2a9a26a260119150}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!M\_eb@{M\_eb}}
+\index{M\_eb@{M\_eb}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{M\_eb}{M\_eb}}
+{\footnotesize\ttfamily double$\ast$$\ast$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+M\+\_\+eb}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ab524c0cd978d1f03f5c6d95d32336b5c}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ab524c0cd978d1f03f5c6d95d32336b5c}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!Me@{Me}}
+\index{Me@{Me}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{Me}{Me}}
+{\footnotesize\ttfamily double$\ast$$\ast$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+Me}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a4e377b846e57d659f6c282428810af05}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a4e377b846e57d659f6c282428810af05}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!Model@{Model}}
+\index{Model@{Model}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{Model}{Model}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}}$\ast$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+Model}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a40d22df36215fdc080a519bb2343da4a}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a40d22df36215fdc080a519bb2343da4a}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!MType@{MType}}
+\index{MType@{MType}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{MType}{MType}}
+{\footnotesize\ttfamily int main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+M\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a9abed43838184dd9af13ade285b0c72c}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a9abed43838184dd9af13ade285b0c72c}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!ND@{ND}}
+\index{ND@{ND}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{ND}{ND}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+ND}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a22c7ddd06f8b548cf1d5f42a781419e2}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a22c7ddd06f8b548cf1d5f42a781419e2}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!ND\_b@{ND\_b}}
+\index{ND\_b@{ND\_b}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{ND\_b}{ND\_b}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+N\+D\+\_\+b}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a67e36766c64cb68ee91f63673cca8087}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a67e36766c64cb68ee91f63673cca8087}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!ND\_e@{ND\_e}}
+\index{ND\_e@{ND\_e}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{ND\_e}{ND\_e}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+N\+D\+\_\+e}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aac0d35bfccb0bc8816d007a061ecae32}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aac0d35bfccb0bc8816d007a061ecae32}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!NEqEl@{NEqEl}}
+\index{NEqEl@{NEqEl}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{NEqEl}{NEqEl}}
+{\footnotesize\ttfamily int main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+N\+Eq\+El}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a28794552a3937894ea44b254b3e3eb8e}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a28794552a3937894ea44b254b3e3eb8e}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!Rho@{Rho}}
+\index{Rho@{Rho}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{Rho}{Rho}}
+{\footnotesize\ttfamily double main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+Rho\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ac93172e6b6dd13de97f88ca952268a4d}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_ac93172e6b6dd13de97f88ca952268a4d}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!SF@{SF}}
+\index{SF@{SF}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{SF}{SF}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmain__ns_1_1ShapeFunctions__ns_1_1ShapeFunctions__cls}{main\+\_\+ns\+::\+Shape\+Functions\+\_\+ns\+::\+Shape\+Functions\+\_\+cls}}$<$int, double$>$$\ast$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+SF}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a4ed62579f4d5efe9a61458c38fa1ef0b}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a4ed62579f4d5efe9a61458c38fa1ef0b}} 
+\index{main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}!XT@{XT}}
+\index{XT@{XT}!main\_ns::Matrices\_ns::Matrices\_cls@{main\_ns::Matrices\_ns::Matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{XT}{XT}}
+{\footnotesize\ttfamily double$\ast$$\ast$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls\+::\+XT}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/global\+\_\+matrices/\mbox{\hyperlink{create__global__matrices__cls_8h}{create\+\_\+global\+\_\+matrices\+\_\+cls.\+h}}\item 
+src/global\+\_\+matrices/\mbox{\hyperlink{create__global__matrices__cls_8cpp}{create\+\_\+global\+\_\+matrices\+\_\+cls.\+cpp}}\end{DoxyCompactItemize}

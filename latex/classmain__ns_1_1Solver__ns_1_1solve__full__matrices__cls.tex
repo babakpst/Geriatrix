@@ -1,0 +1,107 @@
+\hypertarget{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls}{}\doxysection{main\+\_\+ns\+::Solver\+\_\+ns\+::solve\+\_\+full\+\_\+matrices\+\_\+cls Class Reference}
+\label{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls}\index{main\_ns::Solver\_ns::solve\_full\_matrices\_cls@{main\_ns::Solver\_ns::solve\_full\_matrices\_cls}}
+
+
+{\ttfamily \#include $<$solves\+\_\+full\+\_\+matrices.\+h$>$}
+
+
+
+Inheritance diagram for main\+\_\+ns\+::Solver\+\_\+ns\+::solve\+\_\+full\+\_\+matrices\+\_\+cls\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for main\+\_\+ns\+::Solver\+\_\+ns\+::solve\+\_\+full\+\_\+matrices\+\_\+cls\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a31f2ac87110c953aac2bff69b566c544}{solve\+\_\+full\+\_\+matrices\+\_\+cls}} (\mbox{\hyperlink{classmain__ns_1_1address__ns_1_1address__cls}{main\+\_\+ns\+::address\+\_\+ns\+::address\+\_\+cls}} $\ast$, \mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}} $\ast$, \mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}} $\ast$, \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls}} $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_af465507b6dd4d01696ef8cb40d03ca87}{Compute\+\_\+the\+\_\+effective\+\_\+matrix}} ()
+\item 
+virtual void \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a5f25fe9044394cb2dcbfb155373b7fea}{Reduce\+\_\+the\+\_\+effective\+\_\+forece}} ()
+\item 
+void \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a19ea3a2956b2c3057b44af0742c92d6f}{Matrix\+\_\+\+Multiplication}} (double $\ast$$\ast$\&, std\+::vector$<$ double $>$ \&, std\+::vector$<$ double $>$ \&)
+\item 
+virtual void \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a08714576aa66a2bacd0e32f199848d6d}{Effective\+\_\+forces\+\_\+fn}} (std\+::vector$<$ double $>$ \&)
+\item 
+virtual void \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a5943ad3a9beec06ded6327eff8ed5507}{Solve\+\_\+the\+\_\+system\+\_\+for\+\_\+this\+\_\+\+R\+H\+S\+\_\+using\+\_\+\+Gaussina\+\_\+\+Elimination}} (std\+::vector$<$ double $>$ \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a31f2ac87110c953aac2bff69b566c544}\label{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a31f2ac87110c953aac2bff69b566c544}} 
+\index{main\_ns::Solver\_ns::solve\_full\_matrices\_cls@{main\_ns::Solver\_ns::solve\_full\_matrices\_cls}!solve\_full\_matrices\_cls@{solve\_full\_matrices\_cls}}
+\index{solve\_full\_matrices\_cls@{solve\_full\_matrices\_cls}!main\_ns::Solver\_ns::solve\_full\_matrices\_cls@{main\_ns::Solver\_ns::solve\_full\_matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{solve\_full\_matrices\_cls()}{solve\_full\_matrices\_cls()}}
+{\footnotesize\ttfamily main\+\_\+ns\+::\+Solver\+\_\+ns\+::solve\+\_\+full\+\_\+matrices\+\_\+cls\+::solve\+\_\+full\+\_\+matrices\+\_\+cls (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmain__ns_1_1address__ns_1_1address__cls}{main\+\_\+ns\+::address\+\_\+ns\+::address\+\_\+cls}} $\ast$}]{a\+Addresses,  }\item[{\mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}} $\ast$}]{a\+Model,  }\item[{\mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}} $\ast$}]{a\+Discretization,  }\item[{\mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls}} $\ast$}]{a\+Matrices }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_af465507b6dd4d01696ef8cb40d03ca87}\label{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_af465507b6dd4d01696ef8cb40d03ca87}} 
+\index{main\_ns::Solver\_ns::solve\_full\_matrices\_cls@{main\_ns::Solver\_ns::solve\_full\_matrices\_cls}!Compute\_the\_effective\_matrix@{Compute\_the\_effective\_matrix}}
+\index{Compute\_the\_effective\_matrix@{Compute\_the\_effective\_matrix}!main\_ns::Solver\_ns::solve\_full\_matrices\_cls@{main\_ns::Solver\_ns::solve\_full\_matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{Compute\_the\_effective\_matrix()}{Compute\_the\_effective\_matrix()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Solver\+\_\+ns\+::solve\+\_\+full\+\_\+matrices\+\_\+cls\+::\+Compute\+\_\+the\+\_\+effective\+\_\+matrix (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a09f4b978fb1b30d90fd371c1a68e4aac}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls}}.
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a08714576aa66a2bacd0e32f199848d6d}\label{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a08714576aa66a2bacd0e32f199848d6d}} 
+\index{main\_ns::Solver\_ns::solve\_full\_matrices\_cls@{main\_ns::Solver\_ns::solve\_full\_matrices\_cls}!Effective\_forces\_fn@{Effective\_forces\_fn}}
+\index{Effective\_forces\_fn@{Effective\_forces\_fn}!main\_ns::Solver\_ns::solve\_full\_matrices\_cls@{main\_ns::Solver\_ns::solve\_full\_matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{Effective\_forces\_fn()}{Effective\_forces\_fn()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Solver\+\_\+ns\+::solve\+\_\+full\+\_\+matrices\+\_\+cls\+::\+Effective\+\_\+forces\+\_\+fn (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{UN }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_ab1c8e6e436f1faaa922ef5ec5e348de6}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls}}.
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a19ea3a2956b2c3057b44af0742c92d6f}\label{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a19ea3a2956b2c3057b44af0742c92d6f}} 
+\index{main\_ns::Solver\_ns::solve\_full\_matrices\_cls@{main\_ns::Solver\_ns::solve\_full\_matrices\_cls}!Matrix\_Multiplication@{Matrix\_Multiplication}}
+\index{Matrix\_Multiplication@{Matrix\_Multiplication}!main\_ns::Solver\_ns::solve\_full\_matrices\_cls@{main\_ns::Solver\_ns::solve\_full\_matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{Matrix\_Multiplication()}{Matrix\_Multiplication()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Solver\+\_\+ns\+::solve\+\_\+full\+\_\+matrices\+\_\+cls\+::\+Matrix\+\_\+\+Multiplication (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$\&}]{Matrix,  }\item[{std\+::vector$<$ double $>$ \&}]{Temp,  }\item[{std\+::vector$<$ double $>$ \&}]{UN }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a5f25fe9044394cb2dcbfb155373b7fea}\label{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a5f25fe9044394cb2dcbfb155373b7fea}} 
+\index{main\_ns::Solver\_ns::solve\_full\_matrices\_cls@{main\_ns::Solver\_ns::solve\_full\_matrices\_cls}!Reduce\_the\_effective\_forece@{Reduce\_the\_effective\_forece}}
+\index{Reduce\_the\_effective\_forece@{Reduce\_the\_effective\_forece}!main\_ns::Solver\_ns::solve\_full\_matrices\_cls@{main\_ns::Solver\_ns::solve\_full\_matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{Reduce\_the\_effective\_forece()}{Reduce\_the\_effective\_forece()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Solver\+\_\+ns\+::solve\+\_\+full\+\_\+matrices\+\_\+cls\+::\+Reduce\+\_\+the\+\_\+effective\+\_\+forece (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a6e2d5d6992923cec1a4017ae35a81476}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls}}.
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a5943ad3a9beec06ded6327eff8ed5507}\label{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a5943ad3a9beec06ded6327eff8ed5507}} 
+\index{main\_ns::Solver\_ns::solve\_full\_matrices\_cls@{main\_ns::Solver\_ns::solve\_full\_matrices\_cls}!Solve\_the\_system\_for\_this\_RHS\_using\_Gaussina\_Elimination@{Solve\_the\_system\_for\_this\_RHS\_using\_Gaussina\_Elimination}}
+\index{Solve\_the\_system\_for\_this\_RHS\_using\_Gaussina\_Elimination@{Solve\_the\_system\_for\_this\_RHS\_using\_Gaussina\_Elimination}!main\_ns::Solver\_ns::solve\_full\_matrices\_cls@{main\_ns::Solver\_ns::solve\_full\_matrices\_cls}}
+\doxysubsubsection{\texorpdfstring{Solve\_the\_system\_for\_this\_RHS\_using\_Gaussina\_Elimination()}{Solve\_the\_system\_for\_this\_RHS\_using\_Gaussina\_Elimination()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Solver\+\_\+ns\+::solve\+\_\+full\+\_\+matrices\+\_\+cls\+::\+Solve\+\_\+the\+\_\+system\+\_\+for\+\_\+this\+\_\+\+R\+H\+S\+\_\+using\+\_\+\+Gaussina\+\_\+\+Elimination (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{UN }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_ae2a45529f8da0674ef896e5bb7093e5f}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/solver/\mbox{\hyperlink{solves__full__matrices_8h}{solves\+\_\+full\+\_\+matrices.\+h}}\item 
+src/solver/\mbox{\hyperlink{solves__full__matrices_8cpp}{solves\+\_\+full\+\_\+matrices.\+cpp}}\end{DoxyCompactItemize}

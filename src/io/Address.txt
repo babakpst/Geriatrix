@@ -1,0 +1,14 @@
+Input file name:
+EX1_homogeneous
+Directory:
+/net/camille/data/babak/MyStuff/MyDocuments/Code/C++/SeismoOne
+
+/workspace/MyDocuments/Codes/C++/SeismoOne
+
+
+EX1_homogeneous
+EX2_homogeneous  
+Sediment-filled_SV_100
+Sediment-filled_SV_100_Freq
+Sediment-filled_SV_100_Sine8
+Three_Layer_Model_P_Ex_2

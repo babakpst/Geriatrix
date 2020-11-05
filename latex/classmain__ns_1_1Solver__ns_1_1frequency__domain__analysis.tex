@@ -1,0 +1,155 @@
+\hypertarget{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis}{}\doxysection{main\+\_\+ns\+::Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis Class Reference}
+\label{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis}\index{main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}}
+
+
+{\ttfamily \#include $<$frequency\+\_\+domain\+\_\+full\+\_\+matrices.\+h$>$}
+
+
+
+Inheritance diagram for main\+\_\+ns\+::Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for main\+\_\+ns\+::Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a340744d2bddc3e77ff5e5c961d509ad9}{frequency\+\_\+domain\+\_\+analysis}} (\mbox{\hyperlink{classmain__ns_1_1address__ns_1_1address__cls}{main\+\_\+ns\+::address\+\_\+ns\+::address\+\_\+cls}} $\ast$, \mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}} $\ast$, \mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}} $\ast$, \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls}} $\ast$)
+\item 
+void \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ac6ff6448ce29e53c199bfc3956170a48}{Compute\+\_\+the\+\_\+transfer\+\_\+functions\+\_\+in\+\_\+the\+\_\+frequency\+\_\+domain}} ()
+\item 
+virtual \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a86e195dd0060b62a200e1cc3e0a7d065}{$\sim$frequency\+\_\+domain\+\_\+analysis}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1address__ns_1_1address__cls}{main\+\_\+ns\+::address\+\_\+ns\+::address\+\_\+cls}} $\ast$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ab5ae6dc25c85b33201a462811ce8e919}{Addresses}}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}} $\ast$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a086d376f97deb8b598f8dfaba17aecb3}{Model}}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}} $\ast$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ae684a67535652eeff09f7ba95ba1501a}{Discretized\+Model}}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls}} $\ast$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a1a7d51e49c10eeeb96736e4d9e74d155}{Matrices}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a3d8b3be54c9511d174019f170f80a8a2}{Reduce\+\_\+the\+\_\+effective\+\_\+forece\+\_\+in\+\_\+the\+\_\+freq\+\_\+domain}} ()
+\item 
+void \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ae2105ff2e5250eee2dda6d5c9844c5c8}{substitute\+\_\+the\+\_\+\+R\+H\+S\+\_\+and\+\_\+solve}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ofstream \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a6df8e9236f6585e04605ab46bf5c3a4b}{Transfer\+Func}}
+\item 
+double $\ast$$\ast$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_af9b0021102ec685ef50722de64c37116}{K\+\_\+\+Eff}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a890258d2bdb0bfd2c0d476856dbadfdc}{R\+HS}}
+\item 
+\mbox{\hyperlink{structmain__ns_1_1Solver__ns_1_1apply__seismic__loads__to__the__domain__cls_1_1InputLoad__frequency__domain}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::apply\+\_\+seismic\+\_\+loads\+\_\+to\+\_\+the\+\_\+domain\+\_\+cls\+::\+Input\+Load\+\_\+frequency\+\_\+domain}} \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ac83eb9acc0f828e22255c4e9d16121e5}{Load\+Package}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a340744d2bddc3e77ff5e5c961d509ad9}\label{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a340744d2bddc3e77ff5e5c961d509ad9}} 
+\index{main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}!frequency\_domain\_analysis@{frequency\_domain\_analysis}}
+\index{frequency\_domain\_analysis@{frequency\_domain\_analysis}!main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}}
+\doxysubsubsection{\texorpdfstring{frequency\_domain\_analysis()}{frequency\_domain\_analysis()}}
+{\footnotesize\ttfamily main\+\_\+ns\+::\+Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+::frequency\+\_\+domain\+\_\+analysis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmain__ns_1_1address__ns_1_1address__cls}{main\+\_\+ns\+::address\+\_\+ns\+::address\+\_\+cls}} $\ast$}]{a\+Addresses,  }\item[{\mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}} $\ast$}]{a\+Model,  }\item[{\mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}} $\ast$}]{a\+Discretization,  }\item[{\mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls}} $\ast$}]{a\+Matrices }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a86e195dd0060b62a200e1cc3e0a7d065}\label{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a86e195dd0060b62a200e1cc3e0a7d065}} 
+\index{main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}!````~frequency\_domain\_analysis@{$\sim$frequency\_domain\_analysis}}
+\index{````~frequency\_domain\_analysis@{$\sim$frequency\_domain\_analysis}!main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}}
+\doxysubsubsection{\texorpdfstring{$\sim$frequency\_domain\_analysis()}{~frequency\_domain\_analysis()}}
+{\footnotesize\ttfamily main\+\_\+ns\+::\+Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+::$\sim$frequency\+\_\+domain\+\_\+analysis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ac6ff6448ce29e53c199bfc3956170a48}\label{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ac6ff6448ce29e53c199bfc3956170a48}} 
+\index{main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}!Compute\_the\_transfer\_functions\_in\_the\_frequency\_domain@{Compute\_the\_transfer\_functions\_in\_the\_frequency\_domain}}
+\index{Compute\_the\_transfer\_functions\_in\_the\_frequency\_domain@{Compute\_the\_transfer\_functions\_in\_the\_frequency\_domain}!main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}}
+\doxysubsubsection{\texorpdfstring{Compute\_the\_transfer\_functions\_in\_the\_frequency\_domain()}{Compute\_the\_transfer\_functions\_in\_the\_frequency\_domain()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+::\+Compute\+\_\+the\+\_\+transfer\+\_\+functions\+\_\+in\+\_\+the\+\_\+frequency\+\_\+domain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a3d8b3be54c9511d174019f170f80a8a2}\label{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a3d8b3be54c9511d174019f170f80a8a2}} 
+\index{main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}!Reduce\_the\_effective\_forece\_in\_the\_freq\_domain@{Reduce\_the\_effective\_forece\_in\_the\_freq\_domain}}
+\index{Reduce\_the\_effective\_forece\_in\_the\_freq\_domain@{Reduce\_the\_effective\_forece\_in\_the\_freq\_domain}!main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}}
+\doxysubsubsection{\texorpdfstring{Reduce\_the\_effective\_forece\_in\_the\_freq\_domain()}{Reduce\_the\_effective\_forece\_in\_the\_freq\_domain()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+::\+Reduce\+\_\+the\+\_\+effective\+\_\+forece\+\_\+in\+\_\+the\+\_\+freq\+\_\+domain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ae2105ff2e5250eee2dda6d5c9844c5c8}\label{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ae2105ff2e5250eee2dda6d5c9844c5c8}} 
+\index{main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}!substitute\_the\_RHS\_and\_solve@{substitute\_the\_RHS\_and\_solve}}
+\index{substitute\_the\_RHS\_and\_solve@{substitute\_the\_RHS\_and\_solve}!main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}}
+\doxysubsubsection{\texorpdfstring{substitute\_the\_RHS\_and\_solve()}{substitute\_the\_RHS\_and\_solve()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+::substitute\+\_\+the\+\_\+\+R\+H\+S\+\_\+and\+\_\+solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ab5ae6dc25c85b33201a462811ce8e919}\label{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ab5ae6dc25c85b33201a462811ce8e919}} 
+\index{main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}!Addresses@{Addresses}}
+\index{Addresses@{Addresses}!main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}}
+\doxysubsubsection{\texorpdfstring{Addresses}{Addresses}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmain__ns_1_1address__ns_1_1address__cls}{main\+\_\+ns\+::address\+\_\+ns\+::address\+\_\+cls}}$\ast$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+::\+Addresses}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ae684a67535652eeff09f7ba95ba1501a}\label{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ae684a67535652eeff09f7ba95ba1501a}} 
+\index{main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}!DiscretizedModel@{DiscretizedModel}}
+\index{DiscretizedModel@{DiscretizedModel}!main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}}
+\doxysubsubsection{\texorpdfstring{DiscretizedModel}{DiscretizedModel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}}$\ast$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+::\+Discretized\+Model}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_af9b0021102ec685ef50722de64c37116}\label{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_af9b0021102ec685ef50722de64c37116}} 
+\index{main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}!K\_Eff@{K\_Eff}}
+\index{K\_Eff@{K\_Eff}!main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}}
+\doxysubsubsection{\texorpdfstring{K\_Eff}{K\_Eff}}
+{\footnotesize\ttfamily double$\ast$$\ast$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+::\+K\+\_\+\+Eff\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ac83eb9acc0f828e22255c4e9d16121e5}\label{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_ac83eb9acc0f828e22255c4e9d16121e5}} 
+\index{main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}!LoadPackage@{LoadPackage}}
+\index{LoadPackage@{LoadPackage}!main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}}
+\doxysubsubsection{\texorpdfstring{LoadPackage}{LoadPackage}}
+{\footnotesize\ttfamily main\+\_\+ns\+::\+Solver\+\_\+ns\+::apply\+\_\+seismic\+\_\+loads\+\_\+to\+\_\+the\+\_\+domain\+\_\+cls\+:: \mbox{\hyperlink{structmain__ns_1_1Solver__ns_1_1apply__seismic__loads__to__the__domain__cls_1_1InputLoad__frequency__domain}{Input\+Load\+\_\+frequency\+\_\+domain}} main\+\_\+ns\+::\+Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+::\+Load\+Package\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a1a7d51e49c10eeeb96736e4d9e74d155}\label{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a1a7d51e49c10eeeb96736e4d9e74d155}} 
+\index{main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}!Matrices@{Matrices}}
+\index{Matrices@{Matrices}!main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}}
+\doxysubsubsection{\texorpdfstring{Matrices}{Matrices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls}}$\ast$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+::\+Matrices}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a086d376f97deb8b598f8dfaba17aecb3}\label{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a086d376f97deb8b598f8dfaba17aecb3}} 
+\index{main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}!Model@{Model}}
+\index{Model@{Model}!main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}}
+\doxysubsubsection{\texorpdfstring{Model}{Model}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}}$\ast$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+::\+Model}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a890258d2bdb0bfd2c0d476856dbadfdc}\label{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a890258d2bdb0bfd2c0d476856dbadfdc}} 
+\index{main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}!RHS@{RHS}}
+\index{RHS@{RHS}!main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}}
+\doxysubsubsection{\texorpdfstring{RHS}{RHS}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+::\+R\+HS\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a6df8e9236f6585e04605ab46bf5c3a4b}\label{classmain__ns_1_1Solver__ns_1_1frequency__domain__analysis_a6df8e9236f6585e04605ab46bf5c3a4b}} 
+\index{main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}!TransferFunc@{TransferFunc}}
+\index{TransferFunc@{TransferFunc}!main\_ns::Solver\_ns::frequency\_domain\_analysis@{main\_ns::Solver\_ns::frequency\_domain\_analysis}}
+\doxysubsubsection{\texorpdfstring{TransferFunc}{TransferFunc}}
+{\footnotesize\ttfamily std\+::ofstream main\+\_\+ns\+::\+Solver\+\_\+ns\+::frequency\+\_\+domain\+\_\+analysis\+::\+Transfer\+Func\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/global\+\_\+matrices/\mbox{\hyperlink{frequency__domain__full__matrices_8h}{frequency\+\_\+domain\+\_\+full\+\_\+matrices.\+h}}\item 
+src/global\+\_\+matrices/\mbox{\hyperlink{frequency__domain__full__matrices_8cpp}{frequency\+\_\+domain\+\_\+full\+\_\+matrices.\+cpp}}\end{DoxyCompactItemize}

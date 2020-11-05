@@ -1,0 +1,331 @@
+\hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls}{}\doxysection{main\+\_\+ns\+::Solver\+\_\+ns\+::Solver\+\_\+cls Class Reference}
+\label{classmain__ns_1_1Solver__ns_1_1Solver__cls}\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+
+
+{\ttfamily \#include $<$solver\+\_\+cls.\+h$>$}
+
+
+
+Inheritance diagram for main\+\_\+ns\+::Solver\+\_\+ns\+::Solver\+\_\+cls\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain__ns_1_1Solver__ns_1_1Solver__cls__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for main\+\_\+ns\+::Solver\+\_\+ns\+::Solver\+\_\+cls\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain__ns_1_1Solver__ns_1_1Solver__cls__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a1606b6979299add6fa48b4d35968dd4b}{Solver\+\_\+cls}} (\mbox{\hyperlink{classmain__ns_1_1address__ns_1_1address__cls}{main\+\_\+ns\+::address\+\_\+ns\+::address\+\_\+cls}} $\ast$, \mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}} $\ast$, \mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}} $\ast$, \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls}} $\ast$)
+\item 
+void \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_af29ee4c9438bc16beda93c56898dba5a}{solve\+\_\+the\+\_\+system\+\_\+using\+\_\+implicit\+\_\+newmark\+\_\+method}} ()
+\item 
+virtual \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a1b55bb8da00926ee6110d15fb943dc02}{$\sim$\+Solver\+\_\+cls}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_ab79da3fe0408615fe08483ddfa35047d}{A0}}
+\item 
+double \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a832f4855acb0d8b8fc7cf5ab92f5cc1a}{A1}}
+\item 
+double \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a2cd3ce515051e672c1f34645a1e5cdf6}{A2}}
+\item 
+double \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_aae2a7e6a1adae9190129d173cf4d2095}{A3}}
+\item 
+double \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a51f547ab3bb9352e222b965580115343}{A4}}
+\item 
+double \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a07a7d362f7157748608aeaf733128a20}{A5}}
+\item 
+double \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_ab1b85ac6a4815ec6ea2ae50d3116e1c4}{E}}
+\item 
+double \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a93271161019f62ed6185fb481f93c115}{Rho}}
+\item 
+double \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a5191eb386800288209da57a1d6af7e4f}{c}}
+\item 
+double \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_aaf7a567719833280f44ae5ea21bbbfe3}{Elapsed\+\_\+\+Time}}
+\item 
+double \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_aff6c05a509fb62c643c14cb9c86e050b}{Time}}
+\item 
+double \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_ac224a445cb6dc39045e927d02a5ef808}{Initial\+\_\+\+Time}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a56430258e9ecac2d50b34b3e300f258a}{UN}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a75b217401ae5fb352f9fe802c9370787}{U}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_ae3794de67e1262a33bec329c79cb55ce}{UD}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_aaf074cfb3630dec5f5e5b931c6b016d5}{U\+DD}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a244ac324682e6a26baf229ffa5907b65}{Temp}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a4a6a66c88b2f5db0afa9304b342c09e8}{F}}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1address__ns_1_1address__cls}{main\+\_\+ns\+::address\+\_\+ns\+::address\+\_\+cls}} $\ast$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_af7cb194cac918f2cfb1148b59d43e3bb}{Addresses}}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}} $\ast$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_ac073ba3639316b2ce072c89214767142}{Model}}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}} $\ast$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a2acce1f8a4d3141af4b01815860d428c}{Discretized\+Model}}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls}} $\ast$ \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a69143bfc23356bcf79e3436fac278d09}{Matrices}}
+\item 
+\mbox{\hyperlink{structmain__ns_1_1Solver__ns_1_1apply__seismic__loads__to__the__domain__cls_1_1InputLoad}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::apply\+\_\+seismic\+\_\+loads\+\_\+to\+\_\+the\+\_\+domain\+\_\+cls\+::\+Input\+Load}} \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a6c37e2a70e088dbb2e1aa8801b3dbec9}{Load\+Package}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a09f4b978fb1b30d90fd371c1a68e4aac}{Compute\+\_\+the\+\_\+effective\+\_\+matrix}} (void)=0
+\item 
+virtual void \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a6e2d5d6992923cec1a4017ae35a81476}{Reduce\+\_\+the\+\_\+effective\+\_\+forece}} (void)=0
+\item 
+virtual void \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_ab1c8e6e436f1faaa922ef5ec5e348de6}{Effective\+\_\+forces\+\_\+fn}} (std\+::vector$<$ double $>$ \&)=0
+\item 
+virtual void \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_ae2a45529f8da0674ef896e5bb7093e5f}{Solve\+\_\+the\+\_\+system\+\_\+for\+\_\+this\+\_\+\+R\+H\+S\+\_\+using\+\_\+\+Gaussina\+\_\+\+Elimination}} (std\+::vector$<$ double $>$ \&)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ofstream \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a44de37ca4ae6a81d2ab6e7fee0b3205b}{info}}
+\item 
+std\+::ofstream \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_af2033c6e9590789ae0ec56ee97e11477}{Full\+Sol}}
+\item 
+std\+::ofstream \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1Solver__cls_a95148d7bbff43070e19c329c5be3d922}{History}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a1606b6979299add6fa48b4d35968dd4b}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a1606b6979299add6fa48b4d35968dd4b}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!Solver\_cls@{Solver\_cls}}
+\index{Solver\_cls@{Solver\_cls}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{Solver\_cls()}{Solver\_cls()}}
+{\footnotesize\ttfamily main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Solver\+\_\+cls (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmain__ns_1_1address__ns_1_1address__cls}{main\+\_\+ns\+::address\+\_\+ns\+::address\+\_\+cls}} $\ast$}]{a\+Addresses,  }\item[{\mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}} $\ast$}]{a\+Model,  }\item[{\mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}} $\ast$}]{a\+Discretization,  }\item[{\mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls}} $\ast$}]{a\+Matrices }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a1b55bb8da00926ee6110d15fb943dc02}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a1b55bb8da00926ee6110d15fb943dc02}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!````~Solver\_cls@{$\sim$Solver\_cls}}
+\index{````~Solver\_cls@{$\sim$Solver\_cls}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{$\sim$Solver\_cls()}{~Solver\_cls()}}
+{\footnotesize\ttfamily main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::$\sim$\+Solver\+\_\+cls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a09f4b978fb1b30d90fd371c1a68e4aac}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a09f4b978fb1b30d90fd371c1a68e4aac}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!Compute\_the\_effective\_matrix@{Compute\_the\_effective\_matrix}}
+\index{Compute\_the\_effective\_matrix@{Compute\_the\_effective\_matrix}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{Compute\_the\_effective\_matrix()}{Compute\_the\_effective\_matrix()}}
+{\footnotesize\ttfamily virtual void main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Compute\+\_\+the\+\_\+effective\+\_\+matrix (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1solve__Skyline__matrices__cls_a57f66067bacc80531d6057afb701c7ef}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::solve\+\_\+\+Skyline\+\_\+matrices\+\_\+cls}}, and \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_af465507b6dd4d01696ef8cb40d03ca87}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::solve\+\_\+full\+\_\+matrices\+\_\+cls}}.
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_ab1c8e6e436f1faaa922ef5ec5e348de6}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_ab1c8e6e436f1faaa922ef5ec5e348de6}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!Effective\_forces\_fn@{Effective\_forces\_fn}}
+\index{Effective\_forces\_fn@{Effective\_forces\_fn}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{Effective\_forces\_fn()}{Effective\_forces\_fn()}}
+{\footnotesize\ttfamily virtual void main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Effective\+\_\+forces\+\_\+fn (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1solve__Skyline__matrices__cls_a985857ae9f2a5c9a6d8b8b11b04f81d0}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::solve\+\_\+\+Skyline\+\_\+matrices\+\_\+cls}}, and \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a08714576aa66a2bacd0e32f199848d6d}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::solve\+\_\+full\+\_\+matrices\+\_\+cls}}.
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a6e2d5d6992923cec1a4017ae35a81476}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a6e2d5d6992923cec1a4017ae35a81476}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!Reduce\_the\_effective\_forece@{Reduce\_the\_effective\_forece}}
+\index{Reduce\_the\_effective\_forece@{Reduce\_the\_effective\_forece}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{Reduce\_the\_effective\_forece()}{Reduce\_the\_effective\_forece()}}
+{\footnotesize\ttfamily virtual void main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Reduce\+\_\+the\+\_\+effective\+\_\+forece (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1solve__Skyline__matrices__cls_ab040d0e62d11225137574f9e40b4c73c}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::solve\+\_\+\+Skyline\+\_\+matrices\+\_\+cls}}, and \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a5f25fe9044394cb2dcbfb155373b7fea}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::solve\+\_\+full\+\_\+matrices\+\_\+cls}}.
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_ae2a45529f8da0674ef896e5bb7093e5f}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_ae2a45529f8da0674ef896e5bb7093e5f}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!Solve\_the\_system\_for\_this\_RHS\_using\_Gaussina\_Elimination@{Solve\_the\_system\_for\_this\_RHS\_using\_Gaussina\_Elimination}}
+\index{Solve\_the\_system\_for\_this\_RHS\_using\_Gaussina\_Elimination@{Solve\_the\_system\_for\_this\_RHS\_using\_Gaussina\_Elimination}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{Solve\_the\_system\_for\_this\_RHS\_using\_Gaussina\_Elimination()}{Solve\_the\_system\_for\_this\_RHS\_using\_Gaussina\_Elimination()}}
+{\footnotesize\ttfamily virtual void main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Solve\+\_\+the\+\_\+system\+\_\+for\+\_\+this\+\_\+\+R\+H\+S\+\_\+using\+\_\+\+Gaussina\+\_\+\+Elimination (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1solve__Skyline__matrices__cls_ade3f66e3c8cf83d1a5cc856091bbe6b6}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::solve\+\_\+\+Skyline\+\_\+matrices\+\_\+cls}}, and \mbox{\hyperlink{classmain__ns_1_1Solver__ns_1_1solve__full__matrices__cls_a5943ad3a9beec06ded6327eff8ed5507}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::solve\+\_\+full\+\_\+matrices\+\_\+cls}}.
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_af29ee4c9438bc16beda93c56898dba5a}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_af29ee4c9438bc16beda93c56898dba5a}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!solve\_the\_system\_using\_implicit\_newmark\_method@{solve\_the\_system\_using\_implicit\_newmark\_method}}
+\index{solve\_the\_system\_using\_implicit\_newmark\_method@{solve\_the\_system\_using\_implicit\_newmark\_method}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{solve\_the\_system\_using\_implicit\_newmark\_method()}{solve\_the\_system\_using\_implicit\_newmark\_method()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::solve\+\_\+the\+\_\+system\+\_\+using\+\_\+implicit\+\_\+newmark\+\_\+method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_ab79da3fe0408615fe08483ddfa35047d}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_ab79da3fe0408615fe08483ddfa35047d}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!A0@{A0}}
+\index{A0@{A0}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{A0}{A0}}
+{\footnotesize\ttfamily double main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+A0}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a832f4855acb0d8b8fc7cf5ab92f5cc1a}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a832f4855acb0d8b8fc7cf5ab92f5cc1a}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!A1@{A1}}
+\index{A1@{A1}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{A1}{A1}}
+{\footnotesize\ttfamily double main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+A1}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a2cd3ce515051e672c1f34645a1e5cdf6}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a2cd3ce515051e672c1f34645a1e5cdf6}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!A2@{A2}}
+\index{A2@{A2}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{A2}{A2}}
+{\footnotesize\ttfamily double main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+A2}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_aae2a7e6a1adae9190129d173cf4d2095}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_aae2a7e6a1adae9190129d173cf4d2095}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!A3@{A3}}
+\index{A3@{A3}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{A3}{A3}}
+{\footnotesize\ttfamily double main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+A3}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a51f547ab3bb9352e222b965580115343}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a51f547ab3bb9352e222b965580115343}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!A4@{A4}}
+\index{A4@{A4}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{A4}{A4}}
+{\footnotesize\ttfamily double main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+A4}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a07a7d362f7157748608aeaf733128a20}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a07a7d362f7157748608aeaf733128a20}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!A5@{A5}}
+\index{A5@{A5}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{A5}{A5}}
+{\footnotesize\ttfamily double main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+A5}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_af7cb194cac918f2cfb1148b59d43e3bb}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_af7cb194cac918f2cfb1148b59d43e3bb}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!Addresses@{Addresses}}
+\index{Addresses@{Addresses}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{Addresses}{Addresses}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmain__ns_1_1address__ns_1_1address__cls}{main\+\_\+ns\+::address\+\_\+ns\+::address\+\_\+cls}}$\ast$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Addresses}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a5191eb386800288209da57a1d6af7e4f}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a5191eb386800288209da57a1d6af7e4f}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!c@{c}}
+\index{c@{c}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily double main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::c}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a2acce1f8a4d3141af4b01815860d428c}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a2acce1f8a4d3141af4b01815860d428c}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!DiscretizedModel@{DiscretizedModel}}
+\index{DiscretizedModel@{DiscretizedModel}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{DiscretizedModel}{DiscretizedModel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}}$\ast$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Discretized\+Model}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_ab1b85ac6a4815ec6ea2ae50d3116e1c4}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_ab1b85ac6a4815ec6ea2ae50d3116e1c4}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!E@{E}}
+\index{E@{E}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{E}{E}}
+{\footnotesize\ttfamily double main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::E}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_aaf7a567719833280f44ae5ea21bbbfe3}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_aaf7a567719833280f44ae5ea21bbbfe3}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!Elapsed\_Time@{Elapsed\_Time}}
+\index{Elapsed\_Time@{Elapsed\_Time}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{Elapsed\_Time}{Elapsed\_Time}}
+{\footnotesize\ttfamily double main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Elapsed\+\_\+\+Time}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a4a6a66c88b2f5db0afa9304b342c09e8}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a4a6a66c88b2f5db0afa9304b342c09e8}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!F@{F}}
+\index{F@{F}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{F}{F}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::F}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_af2033c6e9590789ae0ec56ee97e11477}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_af2033c6e9590789ae0ec56ee97e11477}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!FullSol@{FullSol}}
+\index{FullSol@{FullSol}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{FullSol}{FullSol}}
+{\footnotesize\ttfamily std\+::ofstream main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Full\+Sol\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a95148d7bbff43070e19c329c5be3d922}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a95148d7bbff43070e19c329c5be3d922}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!History@{History}}
+\index{History@{History}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{History}{History}}
+{\footnotesize\ttfamily std\+::ofstream main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+History\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a44de37ca4ae6a81d2ab6e7fee0b3205b}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a44de37ca4ae6a81d2ab6e7fee0b3205b}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!info@{info}}
+\index{info@{info}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{info}{info}}
+{\footnotesize\ttfamily std\+::ofstream main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::info\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_ac224a445cb6dc39045e927d02a5ef808}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_ac224a445cb6dc39045e927d02a5ef808}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!Initial\_Time@{Initial\_Time}}
+\index{Initial\_Time@{Initial\_Time}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{Initial\_Time}{Initial\_Time}}
+{\footnotesize\ttfamily double main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Initial\+\_\+\+Time}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a6c37e2a70e088dbb2e1aa8801b3dbec9}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a6c37e2a70e088dbb2e1aa8801b3dbec9}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!LoadPackage@{LoadPackage}}
+\index{LoadPackage@{LoadPackage}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{LoadPackage}{LoadPackage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmain__ns_1_1Solver__ns_1_1apply__seismic__loads__to__the__domain__cls_1_1InputLoad}{main\+\_\+ns\+::\+Solver\+\_\+ns\+::apply\+\_\+seismic\+\_\+loads\+\_\+to\+\_\+the\+\_\+domain\+\_\+cls\+::\+Input\+Load}} main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Load\+Package}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a69143bfc23356bcf79e3436fac278d09}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a69143bfc23356bcf79e3436fac278d09}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!Matrices@{Matrices}}
+\index{Matrices@{Matrices}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{Matrices}{Matrices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls}}$\ast$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Matrices}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_ac073ba3639316b2ce072c89214767142}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_ac073ba3639316b2ce072c89214767142}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!Model@{Model}}
+\index{Model@{Model}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{Model}{Model}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}}$\ast$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Model}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a93271161019f62ed6185fb481f93c115}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a93271161019f62ed6185fb481f93c115}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!Rho@{Rho}}
+\index{Rho@{Rho}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{Rho}{Rho}}
+{\footnotesize\ttfamily double main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Rho}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a244ac324682e6a26baf229ffa5907b65}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a244ac324682e6a26baf229ffa5907b65}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!Temp@{Temp}}
+\index{Temp@{Temp}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{Temp}{Temp}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Temp}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_aff6c05a509fb62c643c14cb9c86e050b}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_aff6c05a509fb62c643c14cb9c86e050b}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!Time@{Time}}
+\index{Time@{Time}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{Time}{Time}}
+{\footnotesize\ttfamily double main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+Time}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a75b217401ae5fb352f9fe802c9370787}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a75b217401ae5fb352f9fe802c9370787}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!U@{U}}
+\index{U@{U}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{U}{U}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::U}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_ae3794de67e1262a33bec329c79cb55ce}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_ae3794de67e1262a33bec329c79cb55ce}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!UD@{UD}}
+\index{UD@{UD}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{UD}{UD}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+UD}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_aaf074cfb3630dec5f5e5b931c6b016d5}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_aaf074cfb3630dec5f5e5b931c6b016d5}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!UDD@{UDD}}
+\index{UDD@{UDD}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{UDD}{UDD}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+U\+DD}
+
+\mbox{\Hypertarget{classmain__ns_1_1Solver__ns_1_1Solver__cls_a56430258e9ecac2d50b34b3e300f258a}\label{classmain__ns_1_1Solver__ns_1_1Solver__cls_a56430258e9ecac2d50b34b3e300f258a}} 
+\index{main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}!UN@{UN}}
+\index{UN@{UN}!main\_ns::Solver\_ns::Solver\_cls@{main\_ns::Solver\_ns::Solver\_cls}}
+\doxysubsubsection{\texorpdfstring{UN}{UN}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ main\+\_\+ns\+::\+Solver\+\_\+ns\+::\+Solver\+\_\+cls\+::\+UN}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/solver/\mbox{\hyperlink{solver__cls_8h}{solver\+\_\+cls.\+h}}\item 
+src/solver/\mbox{\hyperlink{solver__cls_8cpp}{solver\+\_\+cls.\+cpp}}\end{DoxyCompactItemize}

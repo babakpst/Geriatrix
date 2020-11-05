@@ -1,0 +1,150 @@
+\hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls}{}\doxysection{main\+\_\+ns\+::Matrices\+\_\+ns\+::Matrices\+\_\+\+Skyline\+\_\+cls Class Reference}
+\label{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls}\index{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}}
+
+
+{\ttfamily \#include $<$create\+\_\+skyline\+\_\+matrices\+\_\+cls.\+h$>$}
+
+
+
+Inheritance diagram for main\+\_\+ns\+::Matrices\+\_\+ns\+::Matrices\+\_\+\+Skyline\+\_\+cls\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for main\+\_\+ns\+::Matrices\+\_\+ns\+::Matrices\+\_\+\+Skyline\+\_\+cls\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_adf6009fcbbcf91770323569e2840ad6b}{Matrices\+\_\+\+Skyline\+\_\+cls}} (\mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}} $\ast$, \mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}} $\ast$)
+\item 
+virtual void \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a3b51e2f0b01652905eb340f1fefdb31f}{assemble\+\_\+local\+\_\+to\+\_\+global\+\_\+fn}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a0d1d1233ef8c2f88cdccfef3d28322f9}{JD}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_ab6e9acd110020332e2f377e3915dcd0f}{N\+TK}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a149855668ca0a1112ad3d2e3d55cd86e}{K}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a68835794957e8d2f77925c09a5e2e593}{C}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a4463090ff628daef99114bc360e9144b}{M}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a478a4b0d803ce50f676c461b0cc59646}{allocating\+\_\+global\+\_\+matrices\+\_\+fn}} ()
+\item 
+virtual void \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_aa65e907c058d7e610c594ad7193394ce}{create\+\_\+\+D\+R\+M\+\_\+matrices\+\_\+fn}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_af47c824c9c1855adb3fe64fffeffb3b6}{Skyline\+\_\+fn}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_adf6009fcbbcf91770323569e2840ad6b}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_adf6009fcbbcf91770323569e2840ad6b}} 
+\index{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}!Matrices\_Skyline\_cls@{Matrices\_Skyline\_cls}}
+\index{Matrices\_Skyline\_cls@{Matrices\_Skyline\_cls}!main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}}
+\doxysubsubsection{\texorpdfstring{Matrices\_Skyline\_cls()}{Matrices\_Skyline\_cls()}}
+{\footnotesize\ttfamily main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Skyline\+\_\+cls\+::\+Matrices\+\_\+\+Skyline\+\_\+cls (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmain__ns_1_1discretization__ns_1_1discretization__cls}{main\+\_\+ns\+::discretization\+\_\+ns\+::discretization\+\_\+cls}} $\ast$}]{a\+Discretization,  }\item[{\mbox{\hyperlink{classmain__ns_1_1model__ns_1_1model__cls}{main\+\_\+ns\+::model\+\_\+ns\+::model\+\_\+cls}} $\ast$}]{a\+Model }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_adf6009fcbbcf91770323569e2840ad6b_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a478a4b0d803ce50f676c461b0cc59646}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a478a4b0d803ce50f676c461b0cc59646}} 
+\index{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}!allocating\_global\_matrices\_fn@{allocating\_global\_matrices\_fn}}
+\index{allocating\_global\_matrices\_fn@{allocating\_global\_matrices\_fn}!main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}}
+\doxysubsubsection{\texorpdfstring{allocating\_global\_matrices\_fn()}{allocating\_global\_matrices\_fn()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Skyline\+\_\+cls\+::allocating\+\_\+global\+\_\+matrices\+\_\+fn (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_aa84910834042b3d2dc7f9be7b19fea5f}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls}}.
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a3b51e2f0b01652905eb340f1fefdb31f}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a3b51e2f0b01652905eb340f1fefdb31f}} 
+\index{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}!assemble\_local\_to\_global\_fn@{assemble\_local\_to\_global\_fn}}
+\index{assemble\_local\_to\_global\_fn@{assemble\_local\_to\_global\_fn}!main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}}
+\doxysubsubsection{\texorpdfstring{assemble\_local\_to\_global\_fn()}{assemble\_local\_to\_global\_fn()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Skyline\+\_\+cls\+::assemble\+\_\+local\+\_\+to\+\_\+global\+\_\+fn (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a28837ba9bf01f268557c884046d502ec}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls}}.
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_aa65e907c058d7e610c594ad7193394ce}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_aa65e907c058d7e610c594ad7193394ce}} 
+\index{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}!create\_DRM\_matrices\_fn@{create\_DRM\_matrices\_fn}}
+\index{create\_DRM\_matrices\_fn@{create\_DRM\_matrices\_fn}!main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}}
+\doxysubsubsection{\texorpdfstring{create\_DRM\_matrices\_fn()}{create\_DRM\_matrices\_fn()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Skyline\+\_\+cls\+::create\+\_\+\+D\+R\+M\+\_\+matrices\+\_\+fn (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classmain__ns_1_1Matrices__ns_1_1Matrices__cls_a79cdddf678af8a908dcea32af41dc40c}{main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+cls}}.
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_af47c824c9c1855adb3fe64fffeffb3b6}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_af47c824c9c1855adb3fe64fffeffb3b6}} 
+\index{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}!Skyline\_fn@{Skyline\_fn}}
+\index{Skyline\_fn@{Skyline\_fn}!main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}}
+\doxysubsubsection{\texorpdfstring{Skyline\_fn()}{Skyline\_fn()}}
+{\footnotesize\ttfamily void main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Skyline\+\_\+cls\+::\+Skyline\+\_\+fn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a68835794957e8d2f77925c09a5e2e593}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a68835794957e8d2f77925c09a5e2e593}} 
+\index{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}!C@{C}}
+\index{C@{C}!main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}}
+\doxysubsubsection{\texorpdfstring{C}{C}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Skyline\+\_\+cls\+::C}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a0d1d1233ef8c2f88cdccfef3d28322f9}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a0d1d1233ef8c2f88cdccfef3d28322f9}} 
+\index{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}!JD@{JD}}
+\index{JD@{JD}!main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}}
+\doxysubsubsection{\texorpdfstring{JD}{JD}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Skyline\+\_\+cls\+::\+JD}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a149855668ca0a1112ad3d2e3d55cd86e}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a149855668ca0a1112ad3d2e3d55cd86e}} 
+\index{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}!K@{K}}
+\index{K@{K}!main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}}
+\doxysubsubsection{\texorpdfstring{K}{K}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Skyline\+\_\+cls\+::K}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a4463090ff628daef99114bc360e9144b}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_a4463090ff628daef99114bc360e9144b}} 
+\index{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}!M@{M}}
+\index{M@{M}!main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}}
+\doxysubsubsection{\texorpdfstring{M}{M}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Skyline\+\_\+cls\+::M}
+
+\mbox{\Hypertarget{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_ab6e9acd110020332e2f377e3915dcd0f}\label{classmain__ns_1_1Matrices__ns_1_1Matrices__Skyline__cls_ab6e9acd110020332e2f377e3915dcd0f}} 
+\index{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}!NTK@{NTK}}
+\index{NTK@{NTK}!main\_ns::Matrices\_ns::Matrices\_Skyline\_cls@{main\_ns::Matrices\_ns::Matrices\_Skyline\_cls}}
+\doxysubsubsection{\texorpdfstring{NTK}{NTK}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ main\+\_\+ns\+::\+Matrices\+\_\+ns\+::\+Matrices\+\_\+\+Skyline\+\_\+cls\+::\+N\+TK}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/global\+\_\+matrices/\mbox{\hyperlink{create__skyline__matrices__cls_8h}{create\+\_\+skyline\+\_\+matrices\+\_\+cls.\+h}}\item 
+src/global\+\_\+matrices/\mbox{\hyperlink{create__skyline__matrices__cls_8cpp}{create\+\_\+skyline\+\_\+matrices\+\_\+cls.\+cpp}}\end{DoxyCompactItemize}
