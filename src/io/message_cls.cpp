@@ -26,7 +26,7 @@ chk: prints the checkpoint message and its location.
 // classes
 #include "../../include/io/message_cls.h"
 
-io::message_cls::message_cls() { version = 1.00; }
+io::message_cls::message_cls() {}
 io::message_cls::~message_cls() {}
 
 void io::message_cls::prt_welcome_terminal() const {
@@ -34,8 +34,9 @@ void io::message_cls::prt_welcome_terminal() const {
   std::cout << "*                                                         *\n";
   std::cout << "*                        Geriatrix                        *\n";
   std::cout << "*           numerical solution of wave equation           *\n";
-  // std::cout << "*                      version: " << std::setprecision(2)
-  //          << version << "                      *\n";
+  std::cout << "*                      version: " << std::setprecision(2)
+            << version << "                      *\n";
+  std::cout << version << std::endl;
   std::cout << "*               developer: babak poursartip               *\n";
   std::cout << "*                                                         *\n";
   std::cout << "***********************************************************\n";

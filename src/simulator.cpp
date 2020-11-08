@@ -89,11 +89,11 @@ your own risk.
 #include <iostream>
 
 // classes
+#include "../../include/io/address_cls.h"
 #include "../include/io/message_cls.h"
 //#include "../include/global_matrices/create_full_matrices_cls.h"
 //#include "../include/global_matrices/create_global_matrices_cls.h"
 //#include "../include/global_matrices/create_skyline_matrices_cls.h"
-//#include "../include/input/Address_cls.h"
 //#include "../include/input/reading_the_model_cls.h"
 //#include "../include/mesh/discretize_the_domain_cls.h"
 //#include "../include/solver/solver_cls.h"
@@ -117,19 +117,18 @@ The number of digits in n has been returned.
 on a new line.
 */
 
-int main(int argv, char *argc[]) {
-
-  std::cout << "\n ------------- Simulation starts -------------\n";
-
-  std::unique_ptr<io::message_cls> msg;
+// int main(int argv, char *argc[]) {
+int main() {
+  // communication class
+  std::unique_ptr<io::message_cls> msg(new io::message_cls());
+  // io::message_cls msg; // communication class
   msg->prt_welcome_terminal();
-  msg->chk();
-  msg->prt_success_terminal();
-  /*
-  //  reading initial model data from files
-  main_ns::address_ns::address_cls input;
+
+  address_ns::address_cls input; //  reading initial model data from files
   input.address_fn();
 
+  msg->prt_success_terminal();
+  /*
   // reading the model (mesh, geometry, etc.)
   main_ns::model_ns::model_cls model(&input);
   model.InputBasic();  // reading basic data

@@ -1,8 +1,8 @@
 
 /*
 ################################################################################
-message_cls: This class is in charge of all input/output messages on terminal or
-on the log file.
+message_cls: All input/output messages on terminal or on the log file is through
+this class.
 
 Developed by: Babak Poursartip
 
@@ -55,7 +55,7 @@ private:
   float version = 1.00;
 
 public:
-  message_cls();
+  explicit message_cls();
   ~message_cls();
 
   void prt_welcome_terminal() const;
