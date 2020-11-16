@@ -102,7 +102,7 @@ public:
   -# no output.
   */
 
-  void prt_txt_terminal(const char *text) const;
+  void prt_txt_terminal(const std::string text) const;
   /**<
   prints a text message on terminal.
   @return void
@@ -124,7 +124,7 @@ public:
   -# no output.
   */
 
-  void prt_txt_int_terminal(const char *text, const int &num) const;
+  void prt_txt_int_terminal(const std::string text, const int &num) const;
   /**<
   prints a string followed by an integer.
   @return void
@@ -137,7 +137,7 @@ public:
   -# no output.
   */
 
-  void prt_txt_flt_terminal(const char *text, const float &num) const;
+  void prt_txt_flt_terminal(const std::string text, const float &num) const;
   /**<
   prints a string followed by a float.
   @return void

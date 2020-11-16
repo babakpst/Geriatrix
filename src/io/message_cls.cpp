@@ -51,7 +51,7 @@ void io::message_cls::prt_success_terminal() const {
   std::cout << "*                                                         *\n";
   std::cout << "***********************************************************\n";
 }
-void io::message_cls::prt_txt_terminal(const char *text) const {
+void io::message_cls::prt_txt_terminal(const std::string text) const {
   std::cout << text << "\n";
 }
 
@@ -59,12 +59,12 @@ void io::message_cls::prt_int_terminal(const int &num) const {
   std::cout << " The int value is: " << num << "\n";
 }
 
-void io::message_cls::prt_txt_int_terminal(const char *text,
+void io::message_cls::prt_txt_int_terminal(const std::string text,
                                            const int &num) const {
   std::cout << text << " " << num << "\n";
 }
 
-void io::message_cls::prt_txt_flt_terminal(const char *text,
+void io::message_cls::prt_txt_flt_terminal(const std::string text,
                                            const float &num) const {
   std::cout << text << " " << num << "\n";
 }

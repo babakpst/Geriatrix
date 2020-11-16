@@ -89,8 +89,9 @@ your own risk.
 #include <iostream>
 
 // classes
-#include "../../include/io/address_cls.h"
+#include "../include/io/init_cls.h"
 #include "../include/io/message_cls.h"
+
 //#include "../include/global_matrices/create_full_matrices_cls.h"
 //#include "../include/global_matrices/create_global_matrices_cls.h"
 //#include "../include/global_matrices/create_skyline_matrices_cls.h"
@@ -117,17 +118,24 @@ The number of digits in n has been returned.
 on a new line.
 */
 
-// int main(int argv, char *argc[]) {
-int main() {
+int main(int argv, char *argc[]) {
+  // int main() {
+
   // communication class
   std::unique_ptr<io::message_cls> msg(new io::message_cls());
-  // io::message_cls msg; // communication class
   msg->prt_welcome_terminal();
 
-  address_ns::address_cls input; //  reading initial model data from files
-  input.address_fn();
+  io::init_cls initialization(msg); // initializing the directories
+  initialization.simulationName_fn(msg, argv, argc); // the simulation name
+  initialization.directories_fn();   // filling directory strings
+  initialization.createFolders_fn(); // creating output folders/files
 
+  // shut down message
   msg->prt_success_terminal();
+
+  // ================================================================
+  // ================================================================
+  // ================================================================
   /*
   // reading the model (mesh, geometry, etc.)
   main_ns::model_ns::model_cls model(&input);
