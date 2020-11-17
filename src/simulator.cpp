@@ -89,8 +89,8 @@ your own risk.
 #include <iostream>
 
 // classes
+#include "../include/io/info_cls.h"
 #include "../include/io/init_cls.h"
-#include "../include/io/message_cls.h"
 
 //#include "../include/global_matrices/create_full_matrices_cls.h"
 //#include "../include/global_matrices/create_global_matrices_cls.h"
@@ -122,16 +122,17 @@ int main(int argv, char *argc[]) {
   // int main() {
 
   // communication class
-  std::unique_ptr<io::message_cls> msg(new io::message_cls());
-  msg->prt_welcome_terminal();
+  std::unique_ptr<io::info_cls> info(new io::info_cls());
+  info->prt_welcome_terminal();
 
-  io::init_cls initialization(msg); // initializing the directories
-  initialization.simulationName_fn(msg, argv, argc); // the simulation name
-  initialization.directories_fn();   // filling directory strings
-  initialization.createFolders_fn(); // creating output folders/files
+  std::unique_ptr<io::init_cls> init(
+      new io::init_cls(info));               // initializing the directories
+  init->simulationName_fn(info, argv, argc); // the simulation name
+  init->directories_fn();                    // filling directory strings
+  init->createFolders_fn();                  // creating output folders/files
 
   // shut down message
-  msg->prt_success_terminal();
+  info->prt_success_terminal();
 
   // ================================================================
   // ================================================================

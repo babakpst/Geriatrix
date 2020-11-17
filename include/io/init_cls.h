@@ -18,8 +18,7 @@ V2.01: 11/05/2020 - major modificaiton in the address file.
 
 @version Revision 2.0
 
-@brief reads the name of simulation and the directories from the address.txt
-file in the input_file folder, and stores it.
+@brief initializes the simulation name and directories.
 
 @details
 init_cls: ctor
@@ -34,15 +33,17 @@ simulationName_fn(): Reads the simulation name from terminal or arguments.
 */
 
 // libraries
+#include <boost/filesystem.hpp>
 #include <fstream>
 #include <iostream>
+
 //#include <iomanip>
 //#include <math.h>
 //#include <sstream>
 //#include <string>
 
 // classes
-#include "../../include/io/message_cls.h"
+#include "../../include/io/info_cls.h"
 
 #pragma once
 
@@ -52,45 +53,40 @@ class init_cls {
 
   // members
 private:
-  std::string TempS; // temporary variable for reading strings from input files
+  std::string name; // name of the input/simulation file
 
-public:
-  std::string name;   // name of the input/simulation file
-  std::string inDir;  // Input directory containing the input files
-  std::string outDir; // output directory
-
-  std::string Input_Dir;        // Input directory
-  std::string OutputMatlab_Dir; // dir. for the input file for Matlab visualizer
-                                // interface
-  std::string log_Dir;          // log file dir
-  std::string
-      FullFile_Dir; // dir. for the full results in the time domain analysis
-  std::string HistoryFile_Dir;      // dir. for the time history of displacement
+  std::string inDir;           // Input directory containing the input files
+  std::string outDir;          // output directory
+  std::string logDir;          // log file dir
+  std::string HistoryFile_Dir; // dir. for the time history of displacement
   std::string TransferFunction_Dir; // dir. for the frequency domain results
 
   // methods
 public:
-  explicit init_cls(message_cls *msg); // ctor
-  ~init_cls();                         // dtor
+  explicit init_cls(std::unique_ptr<io::info_cls> &info); // ctor
+  ~init_cls();                                            // dtor
 
-  void simulationName_fn(message_cls *msg, const int argv, char *argc[]);
+  void simulationName_fn(std::unique_ptr<io::info_cls> &info, const int argv,
+                         char *argc[]);
   /**<
   Reads the simulation name from terminal or arguments.
   @return void
   @param
-  none.
+  std::unique_ptr<io::info_cls> &info,
+  const int argv,
+  char *argc[]
   @pre
   -# noe.
   @post
   -# no output.
   */
 
-  void directories_fn();
+  void directories_fn(std::unique_ptr<io::info_cls> &info);
   /**<
   creates the directories variables for the input/output files.
   @return void
   @param
-  none.
+  std::unique_ptr<io::info_cls> &info
   @pre
   -# noe.
   @post
@@ -98,12 +94,12 @@ public:
   */
 
   // creates the output folder, log file, etc.
-  void createFolders_fn();
+  void createFolders_fn(std::unique_ptr<io::info_cls> &info);
   /**<
   creates the output folder, log file, etc.
   @return void
   @param
-  none.
+  std::unique_ptr<io::info_cls> &info
   @pre
   -# noe.
   @post
