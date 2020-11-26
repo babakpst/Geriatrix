@@ -121,8 +121,9 @@ on a new line.
 int main(int argv, char *argc[]) {
   // int main() {
 
-  // communication class
-  std::unique_ptr<io::info_cls> info(new io::info_cls());
+  std::shared_ptr<io::info_cls> info(new io::info_cls()); // communication class
+  std::shared_ptr<timing::date_cls> dateTime(
+      new timing::CDate()); // date and time class
   info->prt_welcome_terminal();
 
   std::unique_ptr<io::init_cls> init(
@@ -131,7 +132,9 @@ int main(int argv, char *argc[]) {
   init->directories_fn();                    // filling directory strings
   init->createFolders_fn();                  // creating output folders/files
 
-  // shut down message
+  // welcome message in the logfile
+
+  // shut down message ======
   info->prt_success_terminal();
 
   // ================================================================
