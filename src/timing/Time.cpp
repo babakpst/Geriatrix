@@ -5,9 +5,9 @@
 timing::CTime::CTime(std::string name, std::shared_ptr<io::CInfo> info,
                      std::shared_ptr<CDate> date)
     : _name(name), _info(info), _date(date) {
-
   std::string temp = _date->getDate();
-  info->prt_txt_terminal("timing class for " + name + " started at: " + temp);
+  _info->prt_txt_terminal(" Timing class for " + _name +
+                          " started at: " + temp);
   info->prt_txt_logfile("timing class for " + name + " started at: " + temp);
 }
 

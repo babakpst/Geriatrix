@@ -23,21 +23,33 @@ V1.00: 11/03/2020 - Initiated: Compiled without error for the first time.
 @details
 info_cls: ctor
 ~info_cls: dtor
-welcomeOnTerminal: prints the welcome message on terminal.
-successOnTerminal: prints the successful execution message on terminal.
-txtOnTerminal: prints a text message on terminal.
-txtOnTxtOnTerminal: prints two text messages on terminal.
-intOnTerminal: prints an integer on terminal.
-txt_intOnTerminal: prints a string followed by an integer.
-txt_fltOnTerminal: prints a string followed by a float.
 
-txttoLogfile: prints a text message on the logfile.
+getLogfileHandle: creating the log file
+
+initiationMessageToTerminal: prints the welcome message on terminal.
+terminationMessageToTerminal: prints the successful execution message on
+terminal.
+
+txtOnTerminal: prints a text message on terminal.
+txtAndTxtMessageOnTerminal: prints two text messages on terminal.
+intOnTerminal: prints an integer on terminal.
+txtAndIntOnTerminal: prints a string followed by an integer on terminal.
+txtAndFloatOnTerminal: prints a string followed by a float on terminal.
+txtAndDoubleOnTerminal: prints a string followed by a double on terminal.
+
+
+initiationMessageToLogfile: prints the welcome message on terminal.
+terminationMessageToLogfile: prints the successful execution message on
+terminal.
+
+txtOnLogfile: prints a text message on the logfile.
+txtAndTxtMessageOnLogfile: prints two text messages on logfile.
+intOnLogfile: prints an integer on terminal.
+txtAndIntOnLogfile: prints a string followed by an integer on logfile.
+txtAndFloatOnLogfile: prints a string followed by a float on logfile.
+txtAndDoubleOnLogfile: prints a string followed by a double on logfile.
 
 chk: prints the checkpoint message on terminal and the log file.
-
-
-welcometoLogfile: prints the welcome message on terminal.
-successtoLogfile: prints the successful execution message on terminal.
 
 @date Tuesday, Nov 03, 2020
 */
@@ -77,7 +89,7 @@ public:
   -# no output.
   */
 
-  void welcomeOnTerminal() const;
+  void initiationMessageToTerminal() const;
   /**<
   prints the welcome message on terminal.
   @return void
@@ -88,29 +100,7 @@ public:
   -# no output.
   */
 
-  void successOnTerminal() const;
-  /**<
-  prints the successful execution message on terminal.
-  @return void
-  @param void
-  @pre
-  -# text
-  @post
-  -# no output.
-  */
-
-  void welcometoLogfile() const;
-  /**<
-  prints the welcome message on terminal.
-  @return void
-  @param void
-  @pre
-  -# text
-  @post
-  -# no output.
-  */
-
-  void successtoLogfile() const;
+  void terminationMessageToTerminal() const;
   /**<
   prints the successful execution message on terminal.
   @return void
@@ -132,33 +122,10 @@ public:
   -# no output.
   */
 
-  void txttoLogfile(const std::string text) const;
-  /**<
-  prints a text message on terminal.
-  @return void
-  @param *char: a string to be printed.
-  @pre
-  -# text contains a string to be printed.
-  @post
-  -# no output.
-  */
-
-  void txtOnTxtOnTerminal(const std::string text1,
-                          const std::string text2) const;
+  void txtAndTxtMessageOnTerminal(const std::string text1,
+                                  const std::string text2) const;
   /**<
   prints a two text messages on terminal.
-  @return void
-  @param std::string: a string to be printed.
-  @pre
-  -# text contains a string to be printed.
-  @post
-  -# no output.
-  */
-
-  void txtOnTxttoLogfile(const std::string text1,
-                         const std::string text2) const;
-  /**<
-  prints a two text messages in the log file.
   @return void
   @param std::string: a string to be printed.
   @pre
@@ -178,9 +145,9 @@ public:
   -# no output.
   */
 
-  void txt_intOnTerminal(const std::string text, const int &num) const;
+  void txtAndIntOnTerminal(const std::string text, const int &num) const;
   /**<
-  prints a string followed by an integer.
+  prints a string followed by an integer on terminal.
   @return void
   @param
   char *text: a char variable.
@@ -191,15 +158,73 @@ public:
   -# no output.
   */
 
-  void txt_fltOnTerminal(const std::string text, const float &num) const;
+  void txtAndFloatOnTerminal(const std::string text, const float &num) const;
   /**<
-  prints a string followed by a float.
+  prints a string followed by a float  on terminal.
   @return void
   @param
   char *text: a char variable.
   float &num: a float variable.
   @pre
   -# float number to be printed.
+  @post
+  -# no output.
+  */
+
+  void txtAndDoubleOnTerminal(const std::string text, const float &num) const;
+  /**<
+  prints a string followed by a double on terminal.
+  @return void
+  @param
+  char *text: a char variable.
+  float &num: a float variable.
+  @pre
+  -# float number to be printed.
+  @post
+  -# no output.
+  */
+
+  void InitiationMessageToLogfile() const;
+  /**<
+  prints the welcome message on terminal.
+  @return void
+  @param void
+  @pre
+  -# text
+  @post
+  -# no output.
+  */
+
+  void TeminationMessageToLogfile() const;
+  /**<
+  prints the successful execution message on terminal.
+  @return void
+  @param void
+  @pre
+  -# text
+  @post
+  -# no output.
+  */
+
+  void txttoLogfile(const std::string text) const;
+  /**<
+  prints a text message on terminal.
+  @return void
+  @param *char: a string to be printed.
+  @pre
+  -# text contains a string to be printed.
+  @post
+  -# no output.
+  */
+
+  void txtAndTxtMessageOnLogfile(const std::string text1,
+                                 const std::string text2) const;
+  /**<
+  prints a two text messages in the log file.
+  @return void
+  @param std::string: a string to be printed.
+  @pre
+  -# text contains a string to be printed.
   @post
   -# no output.
   */
@@ -216,6 +241,7 @@ public:
   -# no output.
   */
 
+  //========================================================
   /*
   std::cout << " elapsed time: " << input_time.elapsed_time.count()
               << " and in microsecond: "

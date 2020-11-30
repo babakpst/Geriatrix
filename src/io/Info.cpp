@@ -24,12 +24,14 @@ chk: prints the checkpoint message and its location.
 */
 
 // classes
-#include "../../include/io/info_cls.h"
+#include "../../include/io/Info.h"
 
-io::info_cls::info_cls() {}
-io::info_cls::~info_cls() {}
+io::CInfo::CInfo() {}
+io::CInfo::~CInfo() {}
 
-void io::info_cls::prt_welcome_terminal() const {
+std::ofstream io::CInfo::getLogfileHandle() { return _logfile; };
+
+void io::CInfo::initiationMessageToTerminal() const {
   std::cout << "***********************************************************\n";
   std::cout << "*                                                         *\n";
   std::cout << "*                        Geriatrix                        *\n";
@@ -43,7 +45,7 @@ void io::info_cls::prt_welcome_terminal() const {
   std::cout << "***********************************************************\n";
 }
 
-void io::info_cls::prt_success_terminal() const {
+void io::CInfo::prt_success_terminal() const {
   std::cout << "***********************************************************\n";
   std::cout << "*                                                         *\n";
   std::cout << "* End of the successfull simulation                       *\n";
@@ -53,30 +55,31 @@ void io::info_cls::prt_success_terminal() const {
   std::cout << "*                                                         *\n";
   std::cout << "***********************************************************\n";
 }
-void io::info_cls::prt_txt_terminal(const std::string text) const {
+
+void io::CInfo::prt_txt_terminal(const std::string text) const {
   std::cout << text << "\n";
 }
 
-void prt_txt_txt_terminal(const std::string text1,
-                          const std::string text2) const {
+void io::CInfo::prt_txt_txt_terminal(const std::string text1,
+                                     const std::string text2) const {
   std::cout << text1 << " " << text2 << "\n";
 }
 
-void io::info_cls::prt_int_terminal(const int &num) const {
+void io::CInfo::prt_int_terminal(const int &num) const {
   std::cout << " The int value is: " << num << "\n";
 }
 
-void io::info_cls::prt_txt_int_terminal(const std::string text,
-                                        const int &num) const {
+void io::CInfo::prt_txt_int_terminal(const std::string text,
+                                     const int &num) const {
   std::cout << text << " " << num << "\n";
 }
 
-void io::info_cls::prt_txt_flt_terminal(const std::string text,
-                                        const float &num) const {
+void io::CInfo::prt_txt_flt_terminal(const std::string text,
+                                     const float &num) const {
   std::cout << text << " " << num << "\n";
 }
 
-void io::info_cls::chk() {
+void io::CInfo::chk() {
   ++_checkpoint;
   std::cout << " checkpoint: " << _checkpoint << " file: " << __FILE__
             << " line: " << __LINE__ << " func: " << __FUNCTION__
@@ -87,11 +90,9 @@ void io::info_cls::chk() {
            << " date: " << __DATE__ << " time: " << __TIME__ << std::endl;
 }
 
-void io::info_cls::prt_welcome_logfile() const {}
-void io::info_cls::prt_success_logfile() const {}
-void prt_txt_txt_logfile(const std::string text1,
-                         const std::string text2) const {}
+void io::CInfo::prt_welcome_logfile() const {}
+void io::CInfo::prt_success_logfile() const {}
+void io::CInfo::prt_txt_txt_logfile(const std::string text1,
+                                    const std::string text2) const {}
 
-void prt_txt_logfile(const std::string text) const {}
-
-std::ofstream io::info_cls::getLogfileHandle() { return _logfile; };
+void io::CInfo::prt_txt_logfile(const std::string text) const {}

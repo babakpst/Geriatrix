@@ -57,8 +57,8 @@ private:
   // methods
 public:
   explicit CTime(std::string name, std::shared_ptr<io::CInfo> info,
-                 std::shared_ptr<CDate> &date); // ctor
-  ~CTime();                                     // dtor
+                 std::shared_ptr<CDate> date); // ctor
+  ~CTime();                                    // dtor
 
   void startTime();
   /**<
