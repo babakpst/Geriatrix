@@ -12,7 +12,7 @@ V2.01: 11/05/2020 - major modificaiton in the address file.
 ################################################################################
 */
 
-/** @file init_cls.h
+/** @file Initialization.h
 
 @author Poursartip:Babak:PhD:Wave simulation
 
@@ -23,11 +23,9 @@ V2.01: 11/05/2020 - major modificaiton in the address file.
 @details
 init_cls: ctor
 ~init_cls: dtor
-directories_fn():   creates the directories variables for the input/output
-files.
-createFolders_fn(): creates the output folder, log file, etc.
-simulationName_fn(): Reads the simulation name from terminal or arguments.
-
+directories():   creates the directories variables for the input/output files.
+createFolders(): creates the output folder, log file, etc.
+simulationName(): Reads the simulation name from terminal or arguments.
 
 @date Friday, Nov 15, 2020
 */
@@ -43,31 +41,30 @@ simulationName_fn(): Reads the simulation name from terminal or arguments.
 //#include <string>
 
 // classes
-#include "../../include/io/info_cls.h"
+#include "../../include/io/Info.h"
 
 #pragma once
 
 namespace io {
 
-class init_cls {
+class CInitialization {
 
   // members
 private:
   std::string _name; // name of the input/simulation file
 
-  std::string _inDir;           // Input directory containing the input files
-  std::string _outDir;          // output directory
-  std::string _logDir;          // log file dir
-  std::string _HistoryFile_Dir; // dir. for the time history of displacement
+  std::string _inDir;                // Input directory containing the input files
+  std::string _outDir;               // output directory
+  std::string _logDir;               // log file dir
+  std::string _HistoryFile_Dir;      // dir. for the time history of displacement
   std::string _TransferFunction_Dir; // dir. for the frequency domain results
 
   // methods
 public:
-  explicit init_cls(std::unique_ptr<io::info_cls> &info); // ctor
-  ~init_cls();                                            // dtor
+  explicit CInitialization(std::unique_ptr<io::CInfo> &info); // ctor
+  ~CInitialization();                                         // dtor
 
-  void simulationName_fn(std::unique_ptr<io::info_cls> &info, const int argv,
-                         char *argc[]);
+  void simulationName_fn(std::unique_ptr<io::CInfo> &info, const int argv, char *argc[]);
   /**<
   Reads the simulation name from terminal or arguments.
   @return void

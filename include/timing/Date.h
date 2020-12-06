@@ -5,11 +5,11 @@ Purpose: This function returns the current time.
 
 Developed by: Babak Poursartip
 
-V1.00: 11/24/2020 - class initiated.
+V1.00: 12/05/2020 - class initiated.
 ################################################################################
 */
 
-/** @file Date_cls.h
+/** @file Date.h
 
 @author Poursartip:Babak:PhD:Wave simulation
 
@@ -34,6 +34,7 @@ get_date: returning the date.
 
 #pragma once
 
+namespace timing {
 class CDate {
 
   // objects
@@ -45,3 +46,4 @@ public:
   CDate();
   std::string getDate(); //*< returning the date
 };
+} // namespace timing

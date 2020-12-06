@@ -1,7 +1,5 @@
 
-// libraries
 
-// classes
 #include "../../include/timing/Date.h"
 
 CDate::CDate() { std::cout << " Date class initiated \n"; }

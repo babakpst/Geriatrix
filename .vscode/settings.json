@@ -3,5 +3,7 @@
     "iosfwd": "cpp",
     "iostream": "cpp",
     "chrono": "cpp"
-  }
+  },
+  "cmake.configureOnOpen": false,
+  "editor.rulers": [100,120]
 }

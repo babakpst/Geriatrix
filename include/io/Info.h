@@ -1,13 +1,13 @@
 
 /*
 ################################################################################
-info_cls: All input/output messages on terminal or on the log file is through
+info_cls: All input/output messages on terminal or to the log file is through
 this class.
 
 Developed by: Babak Poursartip
 
 V1.00: 11/03/2020 - class initiated (election day)
-V1.00: 11/03/2020 - Initiated: Compiled without error for the first time.
+V1.00: 12/05/2020 - Initiated: Compiled without error for the first time.
 
 ################################################################################
 */
@@ -25,10 +25,11 @@ info_cls: ctor
 ~info_cls: dtor
 
 getLogfileHandle: creating the log file
+chk: prints the checkpoint message on terminal and the log file.
 
-initiationMessageToTerminal: prints the welcome message on terminal.
-terminationMessageToTerminal: prints the successful execution message on
-terminal.
+initiationMessageOnTerminal: prints the welcome message on terminal.
+terminationMessageOnTerminal: prints the successful execution message to the
+logfile.
 
 txtOnTerminal: prints a text message on terminal.
 txtAndTxtMessageOnTerminal: prints two text messages on terminal.
@@ -37,19 +38,15 @@ txtAndIntOnTerminal: prints a string followed by an integer on terminal.
 txtAndFloatOnTerminal: prints a string followed by a float on terminal.
 txtAndDoubleOnTerminal: prints a string followed by a double on terminal.
 
+initiationMessageToLogfile: prints the welcome message to the logfile.
+terminationMessageToLogfile: prints the successful execution message to file.
 
-initiationMessageToLogfile: prints the welcome message on terminal.
-terminationMessageToLogfile: prints the successful execution message on
-terminal.
-
-txtOnLogfile: prints a text message on the logfile.
-txtAndTxtMessageOnLogfile: prints two text messages on logfile.
-intOnLogfile: prints an integer on terminal.
-txtAndIntOnLogfile: prints a string followed by an integer on logfile.
-txtAndFloatOnLogfile: prints a string followed by a float on logfile.
-txtAndDoubleOnLogfile: prints a string followed by a double on logfile.
-
-chk: prints the checkpoint message on terminal and the log file.
+txtToLogfile: prints a text message to the logfile.
+txtAndTxtMessageToLogfile: prints two text messages to the logfile.
+intToLogfile: prints an integer to the logfile.
+txtAndIntToLogfile: prints a string followed by an integer to the logfile.
+txtAndFloatToLogfile: prints a string followed by a float to the logfile.
+txtAndDoubleToLogfile: prints a string followed by a double to the logfile.
 
 @date Tuesday, Nov 03, 2020
 */
@@ -68,7 +65,6 @@ namespace io {
 
 class CInfo {
 private:
-  char *_text;
   unsigned int _checkpoint = 0;
   float _version = 1.00;
 
@@ -78,7 +74,7 @@ public:
   explicit CInfo();
   ~CInfo();
 
-  std::ofstream getLogfileHandle();
+  void getLogfileHandle(std::string &logDir);
   /**<
   get the logfile handler.
   @return fstream
@@ -89,7 +85,19 @@ public:
   -# no output.
   */
 
-  void initiationMessageToTerminal() const;
+  void chk();
+  /**<
+  prints the checkpoint message on terminal and the log file.
+  @return void
+  @param
+  num checkpoint.
+  @pre
+  -# int checkpoint be printed.
+  @post
+  -# no output.
+  */
+
+  void initiationMessageOnTerminal() const;
   /**<
   prints the welcome message on terminal.
   @return void
@@ -100,7 +108,7 @@ public:
   -# no output.
   */
 
-  void terminationMessageToTerminal() const;
+  void terminationMessageOnTerminal() const;
   /**<
   prints the successful execution message on terminal.
   @return void
@@ -122,8 +130,7 @@ public:
   -# no output.
   */
 
-  void txtAndTxtMessageOnTerminal(const std::string text1,
-                                  const std::string text2) const;
+  void txtAndTxtMessageOnTerminal(const std::string text1, const std::string text2) const;
   /**<
   prints a two text messages on terminal.
   @return void
@@ -173,7 +180,7 @@ public:
 
   void txtAndDoubleOnTerminal(const std::string text, const float &num) const;
   /**<
-  prints a string followed by a double on terminal.
+  prints a string followed by a double to the logfile.
   @return void
   @param
   char *text: a char variable.
@@ -184,9 +191,9 @@ public:
   -# no output.
   */
 
-  void InitiationMessageToLogfile() const;
+  void initiationMessageToLogfile() const;
   /**<
-  prints the welcome message on terminal.
+  prints the welcome message to the logfile.
   @return void
   @param void
   @pre
@@ -195,9 +202,9 @@ public:
   -# no output.
   */
 
-  void TeminationMessageToLogfile() const;
+  void terminationMessageToLogfile() const;
   /**<
-  prints the successful execution message on terminal.
+  prints the successful execution message to the logfile.
   @return void
   @param void
   @pre
@@ -206,9 +213,9 @@ public:
   -# no output.
   */
 
-  void txttoLogfile(const std::string text) const;
+  void txtToLogfile(const std::string text) const;
   /**<
-  prints a text message on terminal.
+  prints a text message to the logfile.
   @return void
   @param *char: a string to be printed.
   @pre
@@ -217,10 +224,9 @@ public:
   -# no output.
   */
 
-  void txtAndTxtMessageOnLogfile(const std::string text1,
-                                 const std::string text2) const;
+  void txtAndTxtMessageToLogfile(const std::string text1, const std::string text2) const;
   /**<
-  prints a two text messages in the log file.
+  prints a two text messages to the logfile.
   @return void
   @param std::string: a string to be printed.
   @pre
@@ -229,14 +235,52 @@ public:
   -# no output.
   */
 
-  void chk();
+  void intToLogfile(const int &num) const;
   /**<
-  prints the checkpoint message on terminal and the log file.
+  prints an integer to the logfile.
+  @return void
+  @param &num: an int variable.
+  @pre
+  -# int number to be printed.
+  @post
+  -# no output.
+  */
+
+  void txtAndIntToLogfile(const std::string text, const int &num) const;
+  /**<
+  prints a string followed by an integer to the logfile.
   @return void
   @param
-  num checkpoint.
+  char *text: a char variable.
+  int &num: an int variable.
   @pre
-  -# int checkpoint be printed.
+  -# int number to be printed.
+  @post
+  -# no output.
+  */
+
+  void txtAndFloatToLogfile(const std::string text, const float &num) const;
+  /**<
+  prints a string followed by a float  to the logfile.
+  @return void
+  @param
+  char *text: a char variable.
+  float &num: a float variable.
+  @pre
+  -# float number to be printed.
+  @post
+  -# no output.
+  */
+
+  void txtAndDoubleToLogfile(const std::string text, const float &num) const;
+  /**<
+  prints a string followed by a double to the logfile.
+  @return void
+  @param
+  char *text: a char variable.
+  float &num: a float variable.
+  @pre
+  -# float number to be printed.
   @post
   -# no output.
   */

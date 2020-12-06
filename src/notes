@@ -1,0 +1,8 @@
+
+- finilize the info class, get the simiulation name from initialization class and create the log file.
+- have a variable from the command line for detailed output on terminal and logfile.
+- timing summary in the info file.
+- how to manage modulus and namespaces in doxygen
+- nested class in timing class.
+
+- have multiple inheritance and diamond shape

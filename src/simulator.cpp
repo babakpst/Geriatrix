@@ -89,8 +89,9 @@ your own risk.
 #include <iostream>
 
 // classes
-#include "../include/io/info_cls.h"
-#include "../include/io/init_cls.h"
+#include "../include/io/Info.h"
+#include "../include/io/Initialization.h"
+#include "../include/timing/Date.h"
 
 //#include "../include/global_matrices/create_full_matrices_cls.h"
 //#include "../include/global_matrices/create_global_matrices_cls.h"
@@ -121,13 +122,13 @@ on a new line.
 int main(int argv, char *argc[]) {
   // int main() {
 
-  std::shared_ptr<io::info_cls> info(new io::info_cls()); // communication class
-  std::shared_ptr<timing::date_cls> dateTime(
-      new timing::CDate()); // date and time class
+  std::shared_ptr<io::CInfo> info(new io::CInfo());             // communication class
+  std::shared_ptr<timing::CDate> dateTime(new timing::CDate()); // date and time class
+
   info->prt_welcome_terminal();
 
-  std::unique_ptr<io::init_cls> init(
-      new io::init_cls(info));               // initializing the directories
+  std::unique_ptr<io::CInitialization> init(
+      new io::CInitialization(info));        // initializing the directories
   init->simulationName_fn(info, argv, argc); // the simulation name
   init->directories_fn();                    // filling directory strings
   init->createFolders_fn();                  // creating output folders/files
