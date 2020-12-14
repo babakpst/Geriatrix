@@ -28,22 +28,33 @@ get_date: returning the date.
 // libraries
 #include <ctime>
 #include <iostream>
+#include <memory>
 
 // classes
+#include "../../src/parameter.h"
 #include "../io/Info.h"
 
 #pragma once
 
-namespace timing {
+namespace Time {
 class CDate {
 
   // objects
 private:
+  std::string _date;
+  std::string _name;
+
+  std::shared_ptr<io::CInfo> _info;
+
 public:
   // methods
+
 private:
-public:
   CDate();
+
+public:
+  CDate(std::string name, std::shared_ptr<io::CInfo> info);
+  void setDate();        //<* sets the date
   std::string getDate(); //*< returning the date
 };
-} // namespace timing
+} // namespace Time

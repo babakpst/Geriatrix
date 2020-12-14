@@ -94,7 +94,7 @@ public:
   @pre
   -# int checkpoint be printed.
   @post
-  -# no output.
+  -# no output.std::cout << " Time class stopped for: " << _name << "\n";
   */
 
   void initiationMessageOnTerminal() const;

@@ -17,28 +17,40 @@ void io::CInfo::getLogfileHandle(std::string &logDir) {
   }
 };
 
+void io::CInfo::chk() {
+  ++_checkpoint;
+  std::cout << " checkpoint: " << _checkpoint << " file: " << __FILE__ << " line: " << __LINE__
+            << " func: " << __FUNCTION__ << " date: " << __DATE__ << " time: " << __TIME__
+            << std::endl;
+
+  _logfile << " checkpoint: " << _checkpoint << " file: " << __FILE__ << " line: " << __LINE__
+           << " func: " << __FUNCTION__ << " date: " << __DATE__ << " time: " << __TIME__
+           << std::endl;
+}
+
 //======= upto here.
-void io::CInfo::initiationMessageToTerminal() const {
+void io::CInfo::initiationMessageOnTerminal() const {
   std::cout << "***********************************************************\n";
   std::cout << "*                                                         *\n";
   std::cout << "*                        Geriatrix                        *\n";
   std::cout << "*           numerical solution of wave equation           *\n";
   std::cout << "*                      version: " << std::setprecision(2) << _version
             << "                      *\n";
-  std::cout << _version << std::endl;
   std::cout << "*               developer: babak poursartip               *\n";
-
+  std::cout << "*               Date: ???               *\n";
+  std::cout << "*               Time: ???               *\n";
   std::cout << "*                                                         *\n";
   std::cout << "***********************************************************\n";
 }
 
-void io::CInfo::prt_success_terminal() const {
+void io::CInfo::terminationMessageOnTerminal() const {
   std::cout << "***********************************************************\n";
   std::cout << "*                                                         *\n";
   std::cout << "* End of the successfull simulation                       *\n";
-  std::cout << "* Simulation name: TBC                                    *\n";
+  std::cout << "* Simulation name: ????                                    *\n";
+  std::cout << "*               Date: ???               *\n";
+  std::cout << "*               Time: ???               *\n";
   std::cout << "* Terminating the execution.                              *\n";
-
   std::cout << "*                                                         *\n";
   std::cout << "***********************************************************\n";
 }
@@ -59,17 +71,6 @@ void io::CInfo::prt_txt_int_terminal(const std::string text, const int &num) con
 
 void io::CInfo::prt_txt_flt_terminal(const std::string text, const float &num) const {
   std::cout << text << " " << num << "\n";
-}
-
-void io::CInfo::chk() {
-  ++_checkpoint;
-  std::cout << " checkpoint: " << _checkpoint << " file: " << __FILE__ << " line: " << __LINE__
-            << " func: " << __FUNCTION__ << " date: " << __DATE__ << " time: " << __TIME__
-            << std::endl;
-
-  _logfile << " checkpoint: " << _checkpoint << " file: " << __FILE__ << " line: " << __LINE__
-           << " func: " << __FUNCTION__ << " date: " << __DATE__ << " time: " << __TIME__
-           << std::endl;
 }
 
 void io::CInfo::prt_welcome_logfile() const {}

@@ -91,7 +91,8 @@ your own risk.
 // classes
 #include "../include/io/Info.h"
 #include "../include/io/Initialization.h"
-#include "../include/timing/Date.h"
+#include "../include/timekeeper/Date.h"
+#include "../include/timekeeper/Time.h"
 
 //#include "../include/global_matrices/create_full_matrices_cls.h"
 //#include "../include/global_matrices/create_global_matrices_cls.h"
@@ -122,9 +123,15 @@ on a new line.
 int main(int argv, char *argc[]) {
   // int main() {
 
-  std::shared_ptr<io::CInfo> info(new io::CInfo());             // communication class
-  std::shared_ptr<timing::CDate> dateTime(new timing::CDate()); // date and time class
+  // read the name
+  // if argc size =1 get the name.
 
+  std::shared_ptr<io::CInfo> info(new io::CInfo());
+  std::unique_ptr<Time::CDate> date(new Time::CDate("start simulation", info));
+  std::unique_ptr<Time::CDate> time(new Time::CTime("start simulation", info));
+
+  // initialization
+  // inf->logfile
   info->prt_welcome_terminal();
 
   std::unique_ptr<io::CInitialization> init(

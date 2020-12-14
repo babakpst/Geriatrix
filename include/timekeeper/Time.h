@@ -39,26 +39,24 @@ getElaspedTime: returns the elapsed time
 
 #pragma once
 
-namespace timing {
+namespace Time {
 
-class CTime {
+class CTime : public CDate {
 
   // members
 private:
   std::string _name;
 
-  std::shared_ptr<io::CInfo> _info; //*< pointer to the io class
-  std::shared_ptr<CDate> _date;     //*< pointer the to dateTime class
-
   std::chrono::steady_clock::time_point _start;     //*< the start time
   std::chrono::steady_clock::time_point _end;       //*< the end time
   std::chrono::steady_clock::duration _elapsedTime; //*< duration
 
+  std::shared_ptr<io::CInfo> _info;
+
   // methods
 public:
-  explicit CTime(std::string name, std::shared_ptr<io::CInfo> info,
-                 std::shared_ptr<CDate> date); // ctor
-  ~CTime();                                    // dtor
+  explicit CTime(std::string name, std::shared_ptr<io::CInfo> info);
+  ~CTime();
 
   void startTime();
   /**<
@@ -104,4 +102,4 @@ public:
   -# no output.
   */
 };
-} // namespace timing
+} // namespace Time

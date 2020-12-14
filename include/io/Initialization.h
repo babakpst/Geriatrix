@@ -78,7 +78,7 @@ public:
   -# no output.
   */
 
-  void directories_fn(std::unique_ptr<io::info_cls> &info);
+  void directories_fn(std::unique_ptr<io::CInfo> &info);
   /**<
   creates the directories variables for the input/output files.
   @return void
@@ -91,7 +91,7 @@ public:
   */
 
   // creates the output folder, log file, etc.
-  void createFolders_fn(std::unique_ptr<io::info_cls> &info);
+  void createFolders_fn(std::unique_ptr<io::CInfo> &info);
   /**<
   creates the output folder, log file, etc.
   @return void
